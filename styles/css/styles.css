@@ -1,0 +1,74 @@
+body {
+  scroll-behavior: smooth;
+}
+body .shadow-up {
+  box-shadow: 0px -1px 10px 0px rgba(0, 0, 0, 0.3);
+}
+body .text {
+  font-family: "Source Sans Pro";
+}
+body .l {
+  font-weight: 300;
+}
+body .m {
+  font-weight: 400;
+}
+body .sb {
+  font-weight: 600;
+}
+body .b {
+  font-weight: 700;
+}
+body p {
+  font-size: 14px;
+}
+body .bg-blue {
+  background: #8ED4E1;
+}
+body #headerVideoContainer {
+  overflow-x: hidden;
+  max-height: 1100px;
+  margin-top: -400px;
+  position: absolute;
+  z-index: -100;
+}
+body #headerVideoContainer video {
+  position: fixed;
+}
+body #headerVideoText {
+  min-height: 700px;
+  overflow: hidden;
+}
+body #headerVideoText div {
+  position: fixed;
+  z-index: -100;
+}
+body #headerVideoTextSM {
+  min-height: 700px;
+  overflow: hidden;
+}
+body .spacer {
+  min-height: 150px;
+}
+body svg #svg_portfolio_window {
+  fill: url("https://images.unsplash.com/photo-1568089139690-40334bd80340?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80");
+}
+
+.bg-lit {
+  background: rgba(255, 255, 255, 0.8);
+}
+.bg-lit div {
+  opacity: 0.5;
+}
+
+input {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+textarea {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/*# sourceMappingURL=styles.css.map */

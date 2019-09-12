@@ -1,0 +1,87 @@
+
+$vidM: -400px;
+$vidH: -1 * $vidM + 700px;
+$space: 150px;
+
+
+body{
+    color: white;
+
+    .noverflow{
+        overflow: hidden;
+    }
+    background: #232B33;
+    scroll-behavior: smooth;
+    header{
+        // background:  black;
+        content{
+            .navNotes {
+                border: 3px dashed rgba(255, 255, 255, 0.1);
+                color: rgba(255, 255, 255, 0.1);
+            }
+            #nav{
+                background: none !important;
+                transition: 1s;
+                opacity: 0;
+                height: 500px;
+                position: fixed !important;
+                z-index: 100;
+                &:hover{
+                    opacity: 1;
+                }
+                a{
+                    text-decoration: none;
+                }
+                h1{
+                   
+                    color: rgba(255, 255, 255, 0.3);
+                    padding-left: 20%;
+                    transition: 1s;
+                    &:hover{
+                        color: white;
+                        font-size: 4em;
+                        background: rgba(255, 255, 255, 0.3);
+                    }
+                    &:after{
+                        content: " ";
+                        border: white;
+                    }
+                }
+            }
+
+        }
+    }
+    main{
+        #p-1{background: #8FD8BD; color: #232B33;}
+        // #p-2{background: #8FD8BD; }
+        #p-3{background: #F3E36E; color: #232B33;}
+        // #p-4{background: rgb(119, 133, 128); }
+        #p-5{background: #8FD8BD; color: #232B33;}
+
+        content{
+            
+        }
+    }
+    .text {
+        font-family: 'Source Sans Pro';
+    }
+    .l{font-weight: 300;}
+    .m{font-weight: 400;}
+    .sb{font-weight: 600;}
+    .b{font-weight: 700;}
+    p {
+        font-size: 14px;
+    }
+    
+    .spacer{
+        min-height: $space;
+    }
+
+   
+}
+.bg-lit{
+    background: rgba(255, 255, 255, 0.8);
+    div{
+        opacity: 0.5;
+    }
+}
