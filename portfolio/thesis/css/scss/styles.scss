@@ -1,0 +1,173 @@
+// this is the stylesheet for my document OOOOH
+$font: sans-serif;
+$p: 10px;
+$b: 5px;
+$m: 30px;
+$tl: (
+  bg: #DADFE4,
+  bg_hover: #F3F4F6,
+  dot_line: #47627D,
+  tline: linear-gradient(#F8F8F8, #55687E),
+  c_bg: linear-gradient(#F8F8F8, #ffffff)
+);
+$g1: #EBEBEB;
+$g2: #C6C6C6;
+$g3: #7B7B7B;
+$g4: #424242;
+
+$light: 200;
+$bold: 700;
+$regular: 'Open Sans', sans-serif;
+
+html {
+  scroll-behavior: smooth;
+  // background-color: black;
+  font-family: $regular;
+
+}
+p{
+  font-weight: lighter;
+}
+body {
+  padding: $p;
+  font-size: 0.9em;
+  background: linear-gradient(to bottom right, white, $g1)
+
+}
+
+#navbox {
+  position: fixed;
+
+  div{
+    div.navheader{
+      background: $g4;
+      background-image: url("media/images/title.png");
+      margin-bottom: 3px;
+      border-radius: 4px;
+      p{
+        text-align: center;
+        color: white;
+        &:first-child{
+          padding-top: $p;
+          font-weight: bold;
+          color: $g1;
+        }
+      }
+    }
+    a{
+      width: 100%;
+      margin: none;
+      text-decoration: none;
+      font-size: 0.8em;
+      display: block;
+      margin: 3px;
+      padding: 10px;
+      background: $g2;
+      border-radius: 4px;
+      color: white;
+      &:hover{
+        background: $g3;
+        font-weight: bold;
+        transition: 500ms;
+      }
+    }
+    a.active{
+        background: $g3;
+        font-weight: bold;
+    }
+  }
+}
+#main{
+  padding-left: 2.5%;
+
+  div{
+    border-radius: 4px;
+
+    div{
+    }
+  }
+  div.odd{
+    color: black;
+
+  }
+  div.even{
+    color: black;
+  }
+  div.black{
+    background: $g4;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2em;
+    min-height: 200px;
+  }
+  div.foot{
+    background: black;
+    color: white;
+    text-align: center;
+    font-weight: lighter;
+    font-size: 1em;
+  }
+}
+#controls {
+  background-color: white !important;
+  float: right;
+  position: fixed;
+  right: 0px;
+  div{
+    div.navheader{
+      background: $g1;
+      margin-bottom: 10px;
+      p{
+        text-align: center;
+        color: black;
+        &:first-child{
+          padding-top: $p;
+          font-weight: bold;
+          color: $g3;
+        }
+      }
+    }
+    div{
+      margin: 5px;
+      padding: 10px;
+      background: $g3;
+      border-radius: 4px;
+      color: white;
+      &:hover{
+        background: $g2;
+        transition: 500ms;
+      }
+    }
+  }
+}
+
+// bibliography
+ul.bib{
+  list-style: none;
+  li{
+    p{
+    }
+    div{
+      display: none;
+    }
+
+  }
+  li.annotated{
+    background-color: $g2;
+    &:hover{
+      div{
+        position: absolute;
+        display: block;
+        background-color: $g2;
+        padding: 10px;
+        border-radius: 5px;
+        width: 100%;
+      }
+    }
+  }
+}
+
+.content{
+
+}

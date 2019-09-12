@@ -1,0 +1,18 @@
+body {
+  background: #111;
+  background-size: cover;
+  background-attachment: scroll;
+  background-position: center;
+  color: white;
+}
+body div.container {
+  margin-top: 50px;
+  background: rgba(10, 10, 10, 0.6);
+  overflow-y: scroll;
+  height: 10vw;
+}
+body div.container div.container-fluid {
+  background: black;
+}
+
+/*# sourceMappingURL=zoo.css.map */

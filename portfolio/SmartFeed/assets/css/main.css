@@ -1,0 +1,371 @@
+@charset "UTF-8";
+/*
+--------------------------------------------------------------------------------------------------
+DOCUMENT BEGIN
+SET UP BEGIN
+--------------------------------------------------------------------------------------------------
+*/
+
+body {
+  font-family: 'proxima_novasemibold', sans-serif;
+  margin: 0px;
+  margin-top:20px;
+  margin-bottom: 20px;
+  font-size: 20px;;
+
+}
+.regularText{
+  font-size: 20px;
+
+}
+@font-face {
+    font-family: 'proxima_novasemibold';
+    src: url('../fonts/proximanova-sbold-webfont.eot');
+    src: url('../fonts/proximanova-sbold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/proximanova-sbold-webfont.woff2') format('woff2'),
+         url('../fonts/proximanova-sbold-webfont.woff') format('woff'),
+         url('../fonts/proximanova-sbold-webfont.ttf') format('truetype'),
+         url('../fonts/proximanova-sbold-webfont.svg#proxima_novasemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/*
+--------------------------------------------------------------------------------------------------
+SETUP COMPLETE
+BEGIN HEADER
+
+--------------------------------------------------------------------------------------------------
+*/
+
+#top{
+  position: absolute;
+  margin:0px;
+  margin-bottom: 10px;
+  padding: 0px;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  /*background: #999;*/
+  height: 200px;
+  clear: both;
+}
+#titleFrameUpper {
+  /*background: #345699;*/
+    top: 50px;
+    display: inline;
+    padding: 0px;
+    position: relative;
+    width: 100%;
+    clear: both;
+    min-width: 800px;
+
+}
+.blockLinkText{
+  position: relative;
+  font-size: 20px;
+  top: 10px;
+  text-decoration: none;
+  text-align: center;
+  padding: 15px;;
+  color: #000;
+  margin: auto;
+}
+#blockLinks{
+  position: relative;
+  display: block;
+  margin-left: 15%;
+  height: inherit;
+  padding: 0px;
+}
+.blockLink{
+display: inline-block;
+height: inherit;
+width: auto;
+background: #eee;
+}
+.blockLink:hover{
+background: #fff;
+}
+#moreText{
+  display: none;
+  position: absolute;
+  background: #fff;
+  width: 200px;
+  height: auto;
+  top: 40px;
+  padding: 10px;
+}
+.moreText{
+  font-size: 16px;
+  text-decoration: none;
+  margin: 10px;
+}
+
+/*
+--------------------------------------------------------------------------------------------------
+HEADER COMPLETE
+BEGIN BODY
+
+--------------------------------------------------------------------------------------------------
+*/
+
+/*
+............
+Stuff for Slick Slider
+...........
+*/
+* {
+  box-sizing: border-box;
+}
+
+#banner{
+  width: 60%;
+  height: 300px;
+  display: block;
+  position: relative;
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+.banner{
+  box-sizing: border-box;
+  height: 100%;
+  display: block;
+  position: relative;
+  overflow-y:hidden;
+}
+.banner>a{
+  text-decoration: none;
+}
+.bannerText{
+  display: block;
+  position: relative;
+  z-index: +1;
+  background: rgba(50, 50, 50, 0.5);
+  top: -140px;
+  left: 20px;
+  color: white;
+  font-size: 30px;
+  padding: 10px;
+  width: 500px;
+  border-top: 2px solid red;
+
+}
+.bannerText:hover{
+background: rgba(50, 50, 250, 0.7);
+
+}
+
+
+#mySlider{
+  width: 100%;
+  max-width: 1000px;
+
+}
+
+.theSlider img {
+  width: 100%;
+}
+.slick-slider{
+  display: inline-block;
+  position: relative;
+  margin-top: 130px;
+  margin-left: 0px;
+}
+.slick-prev:before,
+.slick-next:before {
+    color: black;
+}
+.slick-list{
+  width: 100%;
+
+}
+.theSlider {
+  position: absolute;
+  top: 10px;
+  z-index: +999;
+
+}
+.sliderImage{
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+}
+.sliderImageText{
+  background: #00f;
+  width: 140px;
+  position: absolute;
+  z-index: +999;
+  top: 60px;
+  height: 90px;
+  padding: 10px;
+  display: none;
+}
+.sliderImageText>p{
+  color: white;
+  font-size: 12px;
+}
+
+/*
+............
+End of Slick Stuff
+............
+*/
+
+
+.buttonLink{
+  display: inline-block;
+  position: relative;
+  border-radius: 30px;
+  float: right;
+  width: 50px;
+  height: 50px;
+  top: 0px;
+  margin: 5px;
+
+}
+
+.buttonLink:hover{
+top: -2px;
+}
+#titleFrameLinks {
+  /*background: #aa0;*/
+    width: 360px;
+    display: inline-block;;
+    margin-left: 110px;
+    top: 0px;
+    position: relative;
+    float: right;
+}
+#titleFrameLower {
+  background: #eee;
+  display: block;
+  top: 120px;
+  position: relative;
+  clear: both;
+  margin: auto;
+  height: 50px;
+  width: inherit;
+  z-index: +2;
+
+}
+#title {
+    font-weight: bold;
+    /*background: #309;*/
+   font-size: 70px;
+    color: #f00;
+}
+#title:hover {
+    color: #00f
+}
+
+#mainFrame {
+  /*background: #f00;*/
+  display: block;
+  width: 900px;
+  height: auto;
+  top: 0px;
+  position:absolute;
+  clear: both;
+  top: 0px;
+  margin-left: 15%;
+
+}
+
+.articleLarge{
+  height: 300px;
+  display: block;
+  position: relative;
+  left: -210;
+
+}
+.contentColumnMain{
+  width: 40%;
+  display: inline-block;
+  position: relative;
+  background: #eee;
+  float: left;
+  margin-right: 10px;
+  height: auto;
+  min-width: 400px;
+}
+.contentColumnSide{
+  width: 25%;
+  display: inline-block;
+  position: relative;
+  background: #eee;
+  margin-left: 5px;
+  margin-right: 5px;
+  height: auto;
+  min-width: 250px;
+
+}
+.contentColumnRight{
+  width: 20%;
+  display: inline-block;
+  position: relative;
+  background: #eee;
+  margin-left: 25px;
+  float: right;
+  margin-right: 5px;
+  height: auto;
+  min-width: 20px;
+}
+.contentColumnRight>div{
+  background: white;
+}
+.articleSmall{
+  width: 100%;
+  height: 100px;
+  display: inline-block;;
+  position: relative;
+  background: #ddd;
+  margin-bottom: 10px;
+
+}
+.articleSmall:hover{
+  top: -2px;
+}
+.articleSmallImg{
+  width: 100px;
+  height: 100px;
+  position: relative;
+  display: inline-block;
+  margin-right: 5px;
+  background: #9d1;
+}
+.artcileSmallTitleBox{
+  background: ;
+  box-sizing: content-box;
+  height: 100px;
+  width: 40%;
+  display: inline-block;
+  position: relative;
+  left: 0px;
+  top: -68px;
+  margin-left: 0px;
+  z-index: +2000000;
+}
+.articleSmallTitle{
+  font-size: 15px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #000;
+  top: 0px;
+}
+.articleLink{
+  width: 100%;
+  height: 100px;
+  display: inline-block;;
+  position: relative;
+  background: #ddd;
+  margin-bottom: 10px;
+}
+.articleLink:hover{
+  top: -2px;
+}
+.C3{
+  box-sizing: border-box;
+  width: 220px;
+  height: auto;
+}

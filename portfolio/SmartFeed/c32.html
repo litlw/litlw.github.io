@@ -1,0 +1,230 @@
+<!DOCTYPE HTML>
+<meta charset="utf-8" />
+<html>
+
+<head>
+    <link rel="stylesheet" href="assets/css/mode.css">
+    <link rel="stylesheet" type="text/css" href="assets/js/slick-1.6.0/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="assets/js/slick-1.6.0/slick/slick-theme.css" />
+
+
+    <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/slick-1.6.0/slick/slick.min.js"></script>
+
+    <title>
+        SmartFeed
+    </title>
+</head>
+
+<body>
+    <script>
+        $(document).ready(function() {
+            $("#mySlider").slick({
+                infinite: true,
+                slidesToShow: 6,
+                slidesToScroll: 3,
+                autoplay: true,
+                autoplaySpeed: 2000
+            });
+            $("#more").hover(function() {
+                $("#moreText").show();
+
+            }, function() {
+                $("#moreText").hide()
+
+            });
+            $("#moreText").hover(function() {
+                $("#moreText").show();
+
+            }, function() {
+                $("#moreText").hide();
+
+            });
+
+        });
+    </script>
+
+<!--
+This is the main menu that people are supposed to use. the grey one.
+ -->
+
+    <div id="titleFrameLower">
+        <div id="blockLinks">
+            <div class="blockLink">
+                <a href="" class="blockLinkText">
+          News
+        </a>
+            </div>
+            <div class="blockLink">
+                <a href="" class="blockLinkText">
+          Videos
+        </a>
+            </div>
+            <div class="blockLink">
+                <a href="" class="blockLinkText">
+          Quizzes
+        </a>
+            </div>
+            <div class="blockLink">
+                <a href="" class="blockLinkText">
+          Food
+        </a>
+            </div>
+            <div class="blockLink">
+                <a href="" class="blockLinkText">
+          DIY
+        </a>
+            </div>
+            <div class="blockLink">
+                <span id="more" class="blockLinkText">
+          More
+        </span>
+                <div id="moreText">
+                </div>
+            </div>
+        </div>
+    </div>
+<!--
+MainFrame is the window that rests behind the menu, it contains all the stuff.
+-->
+
+    <div id="mainFrame">
+        <div id="titleFrameUpper">
+          <a href="main.html" id="title">
+              SmartFeed
+          </a>
+<!--
+These are the buttons on the far right WHICH DONT DO A FUCKING THING
+ -->
+            <div id="titleFrameLinks">
+                <div class="buttonLink">
+                    <img class="buttonLink" src="assets/img/Arrow.png" />
+                </div>
+                <div class="buttonLink">
+                    <img class="buttonLink" src="assets/img/wtf.png" />
+                </div>
+                <div class="buttonLink">
+                    <img class="buttonLink" src="assets/img/cute.png" />
+                </div>
+                <div class="buttonLink">
+                    <img class="buttonLink" src="assets/img/omg.png" />
+                </div>
+                <div class="buttonLink">
+                    <img class="buttonLink" src="assets/img/win.png" />
+                </div>
+                <div class="buttonLink">
+                    <img class="buttonLink" src="assets/img/LOL.png" />
+                </div>
+            </div>
+        </div>
+
+<!--
+This is the slider that should be at the top of every page.
+ -->
+
+ <div id="mySlider" class="theSlider">
+     <div class="sliderImage" id="s1">
+         <a href="c11.html"><img src="assets/img/Thumbs/C11.jpg" /></a>
+     </div>
+     <div class="sliderImage" id="s2">
+         <a href="c21.html"><img src="assets/img/Thumbs/C21.jpg" /></a>
+     </div>
+     <div class="sliderImage" id="s3">
+         <a href="http://neurosciencenews.com/consciousness-dimensions-neuroscience-4420/"><img src="assets/img/Thumbs/C23.jpg" /></a>
+     </div>
+     <div class="sliderImage" id="s4">
+         <a href="http://neurosciencenews.com/microbes-alzheimers-neurology-3826/"><img src="assets/img/Thumbs/C26.jpg" /></a>
+     </div>
+     <div class="sliderImage" id="s5">
+         <a href="http://phys.org/news/2016-06-scientists-supermassive-black-hole-cold.html"><img src="assets/img/Thumbs/C14.jpg" /></a>
+     </div>
+     <div class="sliderImage" id="s6">
+         <a href="http://phys.org/news/2016-06-mars-orbiters-reveal-seasonal-storm.html"><img src="assets/img/Thumbs/C13.jpg" /></a>
+     </div>
+     <div class="sliderImage" id="s7">
+         <a href="http://phys.org/news/2016-06-young-star-ripping-layers-close-orbiting.html"><img src="assets/img/Thumbs/C15.jpg" /></a>
+     </div>
+     <div class="sliderImage" id="s8">
+         <a href="http://phys.org/news/2016-06-alien-life-exoplanets-dies-young.html"><img src="assets/img/Thumbs/C16.jpg" /></a>
+     </div>
+   </div>
+
+
+<!--
+---------     --    --    -------     --------         ------    --------
+   --         --    --      --        --                 --      ---
+   --         --------      --        --------           --      --------
+   --         --    --      --              --           --            --
+   --         --    --    -------     --------         ------    --------
+
+
+   where the article goes.
+
+ -->
+
+        <div class="mainContent">
+          <p class="articleTitle">
+            Electric eels play defense with a mighty leap
+          </p>
+          <img class="articleImage" src="assets/img/Articles/C32.jpg" />
+          <p class="articleBody">
+            There are some pets that you just don’t pet. But that didn’t stop Philip Stoddard, a zoologist at Florida International University in Miami, from petting his pet electric eel Sparky. “It was so beautiful, I had to pet it,” he told Science News for Students. That was a big mistake, writes Roberta Kwok, because Sparky zapped Stoddard and left him with an arm that hurt for the next hour.
+</p>
+<p class="articleBody">
+
+It could have been worse, though. When electric eels feel threatened by a large, land-based predator, they can leap out of the water in a high-voltage attack to ward off the invader, Kenneth Catania, a biologist a Vanderbilt University in Nashville, reports June 6 in the Proceedings of the National Academy of Sciences.
+</p>
+<p class="articleBody">
+
+Catania isn’t the first scientist to report the leaping behavior. In 1807, German naturalist Alexander von Humboldt described seeing it on a trip to the Amazon in 1800. Humboldt had hired a group of local fishermen to collect electric eels for his research on the animals. The fishermen led about 30 horses and mules into a muddy pond, where eels then leapt up, pressing themselves against the large mammals and delivering a mighty shock. The fishermen were able to keep the horses they were using as eel bait in the pond by climbing into the trees and waving branches at them. Eventually the eels exhausted themselves and the fishermen were able to catch five of them. Two horses died.
+</p>
+<p class="articleBody">
+
+Because no one else had ever seen such behavior, most scientists dismissed Humboldt’s account as a bunch of malarkey. But then Catania witnessed something odd while working with electric eels: When he reached into his eels’ cage with a large net that had a metallic rim and handle (he was wearing gloves), the eels would attack the net. “They swam rapidly toward the net, followed the metal rim to the point of exit from the water, and leaped upward along the rim and handle, keeping their chin in contact while discharging high-voltage volleys,” he writes in PNAS.
+</p>
+<p class="articleBody">
+
+Catania hooked meters that measure voltage and amperage to an aluminum plate and let the eels leap. The higher a leap, the more voltage and amperage an eel produced. Getting high enough is key, it turns out, to effectively zapping an attacker. Once an eel gets high enough, the charge it delivers has no path back into the water (and the eel, completing the circuit) except through the target. So a high leap produces a big zap.
+
+</p>
+<p class="articleBody">
+
+By lacing a fake arm and a plastic alligator head with LEDs, Catania was then able to visualize the effect of this attack: The higher an eel struck the target, the more LEDs lit up.
+</p>
+<p class="articleBody">
+
+“Electric eels likely use an aggressive attack to defend themselves because they often cannot retreat,” Catania writes. During the dry season, eels may be stuck in small, muddy ponds where they don’t have any escape routes. And electrifying the water around them may not be enough to deter a large, terrestrial predator that has only a part of its body submerged. Attacking, in this case, may be the best option for defense.
+
+          </p>
+
+          <p class="articleSource">
+            Read More at <a href="https://www.sciencenews.org/blog/wild-things/electric-eels-play-defense-mighty-leap">ScienceNews</a>
+
+          </p>
+
+
+
+
+        </div>
+
+        <div class="contentColumnRight">
+            <div class="articleLink">
+                <img class="C3" src="assets/img/Thumbs/C31.jpg" />
+            </div>
+            <div class="articleLink">
+                <img class="C3" src="assets/img/Thumbs/C32.jpg" />
+            </div>
+            <div class="articleLink">
+                <img class="C3" src="assets/img/Thumbs/C33.jpg" />
+            </div>
+            <div class="articleLink">
+                <img class="C3" src="assets/img/Thumbs/C34.jpg" />
+            </div>
+
+
+            </div>
+        </div>
+
+</body>
+
+</html>

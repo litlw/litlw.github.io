@@ -1,0 +1,233 @@
+<!DOCTYPE HTML>
+<meta charset="utf-8" />
+<html>
+
+<head>
+    <link rel="stylesheet" href="assets/css/mode.css">
+    <link rel="stylesheet" type="text/css" href="assets/js/slick-1.6.0/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="assets/js/slick-1.6.0/slick/slick-theme.css" />
+
+
+    <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/slick-1.6.0/slick/slick.min.js"></script>
+
+    <title>
+        SmartFeed
+    </title>
+</head>
+
+<body>
+    <script>
+        $(document).ready(function() {
+            $("#mySlider").slick({
+                infinite: true,
+                slidesToShow: 6,
+                slidesToScroll: 3,
+                autoplay: true,
+                autoplaySpeed: 2000
+            });
+            $("#more").hover(function() {
+                $("#moreText").show();
+
+            }, function() {
+                $("#moreText").hide()
+
+            });
+            $("#moreText").hover(function() {
+                $("#moreText").show();
+
+            }, function() {
+                $("#moreText").hide();
+
+            });
+
+        });
+    </script>
+
+<!--
+This is the main menu that people are supposed to use. the grey one.
+ -->
+
+    <div id="titleFrameLower">
+        <div id="blockLinks">
+            <div class="blockLink">
+                <a href="" class="blockLinkText">
+          News
+        </a>
+            </div>
+            <div class="blockLink">
+                <a href="" class="blockLinkText">
+          Videos
+        </a>
+            </div>
+            <div class="blockLink">
+                <a href="" class="blockLinkText">
+          Quizzes
+        </a>
+            </div>
+            <div class="blockLink">
+                <a href="" class="blockLinkText">
+          Food
+        </a>
+            </div>
+            <div class="blockLink">
+                <a href="" class="blockLinkText">
+          DIY
+        </a>
+            </div>
+            <div class="blockLink">
+                <span id="more" class="blockLinkText">
+          More
+        </span>
+                <div id="moreText">
+                </div>
+            </div>
+        </div>
+    </div>
+<!--
+MainFrame is the window that rests behind the menu, it contains all the stuff.
+-->
+
+    <div id="mainFrame">
+        <div id="titleFrameUpper">
+          <a href="main.html" id="title">
+              SmartFeed
+          </a>
+<!--
+These are the buttons on the far right WHICH DONT DO A FUCKING THING
+ -->
+            <div id="titleFrameLinks">
+                <div class="buttonLink">
+                    <img class="buttonLink" src="assets/img/Arrow.png" />
+                </div>
+                <div class="buttonLink">
+                    <img class="buttonLink" src="assets/img/wtf.png" />
+                </div>
+                <div class="buttonLink">
+                    <img class="buttonLink" src="assets/img/cute.png" />
+                </div>
+                <div class="buttonLink">
+                    <img class="buttonLink" src="assets/img/omg.png" />
+                </div>
+                <div class="buttonLink">
+                    <img class="buttonLink" src="assets/img/win.png" />
+                </div>
+                <div class="buttonLink">
+                    <img class="buttonLink" src="assets/img/LOL.png" />
+                </div>
+            </div>
+        </div>
+
+<!--
+This is the slider that should be at the top of every page.
+ -->
+
+ <div id="mySlider" class="theSlider">
+     <div class="sliderImage" id="s1">
+         <a href="c11.html"><img src="assets/img/Thumbs/C11.jpg" /></a>
+     </div>
+     <div class="sliderImage" id="s2">
+         <a href="c21.html"><img src="assets/img/Thumbs/C21.jpg" /></a>
+     </div>
+     <div class="sliderImage" id="s3">
+         <a href="http://neurosciencenews.com/consciousness-dimensions-neuroscience-4420/"><img src="assets/img/Thumbs/C23.jpg" /></a>
+     </div>
+     <div class="sliderImage" id="s4">
+         <a href="http://neurosciencenews.com/microbes-alzheimers-neurology-3826/"><img src="assets/img/Thumbs/C26.jpg" /></a>
+     </div>
+     <div class="sliderImage" id="s5">
+         <a href="http://phys.org/news/2016-06-scientists-supermassive-black-hole-cold.html"><img src="assets/img/Thumbs/C14.jpg" /></a>
+     </div>
+     <div class="sliderImage" id="s6">
+         <a href="http://phys.org/news/2016-06-mars-orbiters-reveal-seasonal-storm.html"><img src="assets/img/Thumbs/C13.jpg" /></a>
+     </div>
+     <div class="sliderImage" id="s7">
+         <a href="http://phys.org/news/2016-06-young-star-ripping-layers-close-orbiting.html"><img src="assets/img/Thumbs/C15.jpg" /></a>
+     </div>
+     <div class="sliderImage" id="s8">
+         <a href="http://phys.org/news/2016-06-alien-life-exoplanets-dies-young.html"><img src="assets/img/Thumbs/C16.jpg" /></a>
+     </div>
+
+
+<!--
+---------     --    --    -------     --------         ------    --------
+   --         --    --      --        --                 --      ---
+   --         --------      --        --------           --      --------
+   --         --    --      --              --           --            --
+   --         --    --    -------     --------         ------    --------
+
+
+   where the article goes.
+
+ -->
+
+        <div class="mainContent">
+          <p class="articleTitle">
+            New Clues to Toxic Forms of Amyloid Beta in Alzheimer’s
+          </p>
+          <img class="articleImage" src="assets/img/Articles/C22.jpg" />
+          <p class="articleBody">
+            Source: UC Santa Cruz.
+          </p>
+          <p class="articleBody">
+
+A subtle change to the amyloid beta protein affects its aggregation behavior and stabilizes an intermediate form with enhanced toxicity.
+</p>
+<p class="articleBody">
+Much of the research on Alzheimer’s disease has focused on the amyloid beta protein, which clumps together into sticky fibrils that form deposits in the brains of people with the disease. In recent years, attention has turned away from the fibrils themselves to an intermediate stage in the aggregation of amyloid beta. “Oligomers” consisting of a few molecules of the protein stuck together are more mobile than the large, insoluble fibrils and seem to be much more toxic. But the actual structure of these soluble oligomers remains unknown, and it’s unclear how they trigger the neurotoxic effects that lead to Alzheimer’s disease.
+</p>
+<p class="articleBody">
+A new study by researchers at UC Santa Cruz may help lift the veil on the structure and behavior of these neurotoxic oligomers. The researchers made a subtle alteration to the amyloid beta protein that had striking effects on its properties. By replacing one amino acid with its mirror image, they created a version of amyloid beta with a reduced rate of fibril formation, different fibril structure, and increased toxicity in cell culture compared to the normal or “wild type” protein.
+</p>
+<p class="articleBody">
+“We perturbed the system very slightly and got enhanced cytotoxicity and destabilization of fibrils,” said Jevgenij Raskatov, assistant professor of chemistry and biochemistry at UC Santa Cruz and corresponding author of a paper on the findings to be published in Chemistry – A European Journal. The accepted article has been posted online prior to editing and formal publication of the final version of record.
+</p>
+<p class="articleBody">
+Most amino acids can occur in two mirror-image forms, a “left-handed” or L-form and a “right-handed” or D-form, but living cells only make proteins out of L-amino acids. Raskatov’s team changed one amino acid in the amyloid beta protein to its D-form: the glutamate at position 22.
+</p>
+<p class="articleBody">
+“This subtle change stabilizes a prefibrillary intermediate that has higher toxicity,” he said, noting that the stable intermediate could be a very useful tool for investigating the neurotoxic effects of amyloid beta oligomers. The role of the amyloid beta protein in Alzheimer’s disease is complicated and remains poorly understood. With a better understanding of the molecular mechanisms underlying the disease, researchers hope to identify new targets for drug development efforts.
+</p>
+<p class="articleBody">
+Several mutations associated with inherited early-onset Alzheimer’s disease affect position 22 in the amyloid beta protein, either changing it from glutamate to another amino acid or deleting it. The new findings underscore the importance of the amino acid at position 22 for amyloid beta toxicity.
+
+      </p>
+          <p class="articleBody">
+Raskatov’s team–postdoctoral researchers Christopher Warner (first author) and Subrata Dutta and graduate student Alejandro Foley–used a variety of techniques to investigate the properties of the altered amyloid beta protein and the oligomers and fibrils it forms. Using small-angle x-ray scattering analysis, they found evidence that the protein forms a soluble oligomer with an ordered structure.
+</p>
+<p class="articleBody">
+“The scattering experiment provided an indication of structure, and there is a chance we can use this information to gain some structural insights,” Raskatov said. “We’re pretty excited about that, because if we can understand the structure of the neurotoxic oligomers, that could help efforts to design molecules to disrupt them.”
+
+          </p>
+
+          <p class="articleSource">
+            Read More at <a href="http://neurosciencenews.com/alzheimers-amyloid-toxicity-4433/">NeuroSciencNews</a>
+
+          </p>
+
+
+          </p>
+
+        </div>
+
+        <div class="contentColumnRight">
+            <div class="articleLink">
+                <img class="C3" src="assets/img/Thumbs/C31.jpg" />
+            </div>
+            <div class="articleLink">
+                <img class="C3" src="assets/img/Thumbs/C32.jpg" />
+            </div>
+            <div class="articleLink">
+                <img class="C3" src="assets/img/Thumbs/C33.jpg" />
+            </div>
+            <div class="articleLink">
+                <img class="C3" src="assets/img/Thumbs/C34.jpg" />
+            </div>
+
+
+            </div>
+        </div>
+
+</body>
+
+</html>

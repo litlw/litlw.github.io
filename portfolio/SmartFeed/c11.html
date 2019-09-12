@@ -1,0 +1,239 @@
+<!DOCTYPE HTML>
+<meta charset="utf-8" />
+<html>
+
+<head>
+    <link rel="stylesheet" href="assets/css/mode.css">
+    <link rel="stylesheet" type="text/css" href="assets/js/slick-1.6.0/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="assets/js/slick-1.6.0/slick/slick-theme.css" />
+
+
+    <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/slick-1.6.0/slick/slick.min.js"></script>
+
+    <title>
+        SmartFeed
+    </title>
+</head>
+
+<body>
+    <script>
+        $(document).ready(function() {
+            $("#mySlider").slick({
+                infinite: true,
+                slidesToShow: 6,
+                slidesToScroll: 3,
+                autoplay: true,
+                autoplaySpeed: 2000
+            });
+            $("#more").hover(function() {
+                $("#moreText").show();
+
+            }, function() {
+                $("#moreText").hide()
+
+            });
+            $("#moreText").hover(function() {
+                $("#moreText").show();
+
+            }, function() {
+                $("#moreText").hide();
+
+            });
+
+        });
+    </script>
+
+<!--
+This is the main menu that people are supposed to use. the grey one.
+ -->
+
+    <div id="titleFrameLower">
+        <div id="blockLinks">
+            <div class="blockLink">
+                <a href="" class="blockLinkText">
+          News
+        </a>
+            </div>
+            <div class="blockLink">
+                <a href="" class="blockLinkText">
+          Videos
+        </a>
+            </div>
+            <div class="blockLink">
+                <a href="" class="blockLinkText">
+          Quizzes
+        </a>
+            </div>
+            <div class="blockLink">
+                <a href="" class="blockLinkText">
+          Food
+        </a>
+            </div>
+            <div class="blockLink">
+                <a href="" class="blockLinkText">
+          DIY
+        </a>
+            </div>
+            <div class="blockLink">
+                <span id="more" class="blockLinkText">
+          More
+        </span>
+                <div id="moreText">
+                </div>
+            </div>
+        </div>
+    </div>
+<!--
+MainFrame is the window that rests behind the menu, it contains all the stuff.
+-->
+
+    <div id="mainFrame">
+        <div id="titleFrameUpper">
+          <a href="main.html" id="title">
+              SmartFeed
+          </a>
+<!--
+These are the buttons on the far right WHICH DONT DO A FUCKING THING
+ -->
+            <div id="titleFrameLinks">
+                <div class="buttonLink">
+                    <img class="buttonLink" src="assets/img/Arrow.png" />
+                </div>
+                <div class="buttonLink">
+                    <img class="buttonLink" src="assets/img/wtf.png" />
+                </div>
+                <div class="buttonLink">
+                    <img class="buttonLink" src="assets/img/cute.png" />
+                </div>
+                <div class="buttonLink">
+                    <img class="buttonLink" src="assets/img/omg.png" />
+                </div>
+                <div class="buttonLink">
+                    <img class="buttonLink" src="assets/img/win.png" />
+                </div>
+                <div class="buttonLink">
+                    <img class="buttonLink" src="assets/img/LOL.png" />
+                </div>
+            </div>
+        </div>
+
+<!--
+This is the slider that should be at the top of every page.
+ -->
+
+ <div id="mySlider" class="theSlider">
+     <div class="sliderImage" id="s1">
+         <a href="c11.html"><img src="assets/img/Thumbs/C11.jpg" /></a>
+     </div>
+     <div class="sliderImage" id="s2">
+         <a href="c21.html"><img src="assets/img/Thumbs/C21.jpg" /></a>
+     </div>
+     <div class="sliderImage" id="s3">
+         <a href="http://neurosciencenews.com/consciousness-dimensions-neuroscience-4420/"><img src="assets/img/Thumbs/C23.jpg" /></a>
+     </div>
+     <div class="sliderImage" id="s4">
+         <a href="http://neurosciencenews.com/microbes-alzheimers-neurology-3826/"><img src="assets/img/Thumbs/C26.jpg" /></a>
+     </div>
+     <div class="sliderImage" id="s5">
+         <a href="http://phys.org/news/2016-06-scientists-supermassive-black-hole-cold.html"><img src="assets/img/Thumbs/C14.jpg" /></a>
+     </div>
+     <div class="sliderImage" id="s6">
+         <a href="http://phys.org/news/2016-06-mars-orbiters-reveal-seasonal-storm.html"><img src="assets/img/Thumbs/C13.jpg" /></a>
+     </div>
+     <div class="sliderImage" id="s7">
+         <a href="http://phys.org/news/2016-06-young-star-ripping-layers-close-orbiting.html"><img src="assets/img/Thumbs/C15.jpg" /></a>
+     </div>
+     <div class="sliderImage" id="s8">
+         <a href="http://phys.org/news/2016-06-alien-life-exoplanets-dies-young.html"><img src="assets/img/Thumbs/C16.jpg" /></a>
+     </div>
+   </div>
+
+
+<!--
+---------     --    --    -------     --------         ------    --------
+   --         --    --      --        --                 --      ---
+   --         --------      --        --------           --      --------
+   --         --    --      --              --           --            --
+   --         --    --    -------     --------         ------    --------
+
+
+   where the article goes.
+
+ -->
+
+        <div class="mainContent">
+          <p class="articleTitle">
+            A new way to control oxygen for electronic properties
+
+          </p>
+          <img class="articleImage" src="assets/img/Articles/C11.jpg" />
+          <p class="articleBody">
+            Hotel managers and materials scientists have a lot in common—they both need to find a way to control properties by managing vacancies.
+Researchers at the U.S. Department of Energy's Argonne National Laboratory found they could use a small electric current to introduce oxygen voids, or vacancies, that dramatically change the conductivity of thin oxide films. The results are published today in Nature Communications.
+</p>
+  <p class="articleBody">
+The discovery improves our understanding of how these materials work and could be useful for new electronics, catalysts or more.
+  </p>
+  <p class="articleBody">
+Scientists are always looking for unusual behaviors in materials that could form the basis of new technologies. Oxides are a class of materials that has garnered much recent interest because they sometimes display such unusual behaviors—flipping between insulating and conducting states, turning magnetism on and off, or even becoming superconducting: conducting electricity perfectly, without any loss as heat.
+</p>
+<p class="articleBody">
+We think some of these properties have to do with oxygen vacancies. The structure of an oxide is a repeating crystalline lattice with oxygen atoms peppered throughout; but sometimes there may be voids where an oxygen atom is missing.
+The usual way to create oxygen vacancies is by heating the materials and adding or removing oxygen from the environment.
+</p>
+<p class="articleBody">
+"But the need to control the gas environment limits where and when you can change the material's properties," said Jeff Eastman, an Argonne materials scientist and corresponding author on the paper.
+</p>
+<p class="articleBody">
+Hotel managers and materials scientists have a lot in common—they both need to find a way to control properties by managing vacancies.
+Researchers at the U.S. Department of Energy's Argonne National Laboratory found they could use a small electric current to introduce oxygen voids, or vacancies, that dramatically change the conductivity of thin oxide films. The results are published today in Nature Communications.
+</p>
+<p class="articleBody">
+The discovery improves our understanding of how these materials work and could be useful for new electronics, catalysts or more.
+Scientists are always looking for unusual behaviors in materials that could form the basis of new technologies. Oxides are a class of materials that has garnered much recent interest because they sometimes display such unusual behaviors—flipping between insulating and conducting states, turning magnetism on and off, or even becoming superconducting: conducting electricity perfectly, without any loss as heat.
+</p>
+<p class="articleBody">
+We think some of these properties have to do with oxygen vacancies. The structure of an oxide is a repeating crystalline lattice with oxygen atoms peppered throughout; but sometimes there may be voids where an oxygen atom is missing.
+The usual way to create oxygen vacancies is by heating the materials and adding or removing oxygen from the environment.
+</p>
+<p class="articleBody">
+"But the need to control the gas environment limits where and when you can change the material's properties," said Jeff Eastman, an Argonne materials scientist and corresponding author on the paper.
+</p>
+
+
+Read more at: <a href="http://phys.org/news/2016-06-oxygen-electronic-properties.html#jCp">Phys.Org</a>
+
+
+
+          <p class="articleSource">
+
+
+          </p>
+
+
+
+
+        </div>
+
+        <div class="contentColumnRight">
+            <div class="articleLink">
+                <img class="C3" src="assets/img/Thumbs/C31.jpg" />
+            </div>
+            <div class="articleLink">
+                <img class="C3" src="assets/img/Thumbs/C32.jpg" />
+            </div>
+            <div class="articleLink">
+                <img class="C3" src="assets/img/Thumbs/C33.jpg" />
+            </div>
+            <div class="articleLink">
+                <img class="C3" src="assets/img/Thumbs/C34.jpg" />
+            </div>
+
+
+            </div>
+        </div>
+
+</body>
+
+</html>

@@ -1,0 +1,223 @@
+<!DOCTYPE HTML>
+<meta charset="utf-8" />
+<html>
+
+<head>
+    <link rel="stylesheet" href="assets/css/mode.css">
+    <link rel="stylesheet" type="text/css" href="assets/js/slick-1.6.0/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="assets/js/slick-1.6.0/slick/slick-theme.css" />
+
+
+    <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/slick-1.6.0/slick/slick.min.js"></script>
+
+    <title>
+        SmartFeed
+    </title>
+</head>
+
+<body>
+    <script>
+        $(document).ready(function() {
+            $("#mySlider").slick({
+                infinite: true,
+                slidesToShow: 6,
+                slidesToScroll: 3,
+                autoplay: true,
+                autoplaySpeed: 2000
+            });
+            $("#more").hover(function() {
+                $("#moreText").show();
+
+            }, function() {
+                $("#moreText").hide()
+
+            });
+            $("#moreText").hover(function() {
+                $("#moreText").show();
+
+            }, function() {
+                $("#moreText").hide();
+
+            });
+
+        });
+    </script>
+
+<!--
+This is the main menu that people are supposed to use. the grey one.
+ -->
+
+    <div id="titleFrameLower">
+        <div id="blockLinks">
+            <div class="blockLink">
+                <a href="" class="blockLinkText">
+          News
+        </a>
+            </div>
+            <div class="blockLink">
+                <a href="" class="blockLinkText">
+          Videos
+        </a>
+            </div>
+            <div class="blockLink">
+                <a href="" class="blockLinkText">
+          Quizzes
+        </a>
+            </div>
+            <div class="blockLink">
+                <a href="" class="blockLinkText">
+          Food
+        </a>
+            </div>
+            <div class="blockLink">
+                <a href="" class="blockLinkText">
+          DIY
+        </a>
+            </div>
+            <div class="blockLink">
+                <span id="more" class="blockLinkText">
+          More
+        </span>
+                <div id="moreText">
+                </div>
+            </div>
+        </div>
+    </div>
+<!--
+MainFrame is the window that rests behind the menu, it contains all the stuff.
+-->
+
+    <div id="mainFrame">
+        <div id="titleFrameUpper">
+          <a href="main.html" id="title">
+              SmartFeed
+          </a>
+<!--
+These are the buttons on the far right WHICH DONT DO A FUCKING THING
+ -->
+            <div id="titleFrameLinks">
+                <div class="buttonLink">
+                    <img class="buttonLink" src="assets/img/Arrow.png" />
+                </div>
+                <div class="buttonLink">
+                    <img class="buttonLink" src="assets/img/wtf.png" />
+                </div>
+                <div class="buttonLink">
+                    <img class="buttonLink" src="assets/img/cute.png" />
+                </div>
+                <div class="buttonLink">
+                    <img class="buttonLink" src="assets/img/omg.png" />
+                </div>
+                <div class="buttonLink">
+                    <img class="buttonLink" src="assets/img/win.png" />
+                </div>
+                <div class="buttonLink">
+                    <img class="buttonLink" src="assets/img/LOL.png" />
+                </div>
+            </div>
+        </div>
+
+<!--
+This is the slider that should be at the top of every page.
+ -->
+
+ <div id="mySlider" class="theSlider">
+     <div class="sliderImage" id="s1">
+         <a href="c11.html"><img src="assets/img/Thumbs/C11.jpg" /></a>
+     </div>
+     <div class="sliderImage" id="s2">
+         <a href="c21.html"><img src="assets/img/Thumbs/C21.jpg" /></a>
+     </div>
+     <div class="sliderImage" id="s3">
+         <a href="http://neurosciencenews.com/consciousness-dimensions-neuroscience-4420/"><img src="assets/img/Thumbs/C23.jpg" /></a>
+     </div>
+     <div class="sliderImage" id="s4">
+         <a href="http://neurosciencenews.com/microbes-alzheimers-neurology-3826/"><img src="assets/img/Thumbs/C26.jpg" /></a>
+     </div>
+     <div class="sliderImage" id="s5">
+         <a href="http://phys.org/news/2016-06-scientists-supermassive-black-hole-cold.html"><img src="assets/img/Thumbs/C14.jpg" /></a>
+     </div>
+     <div class="sliderImage" id="s6">
+         <a href="http://phys.org/news/2016-06-mars-orbiters-reveal-seasonal-storm.html"><img src="assets/img/Thumbs/C13.jpg" /></a>
+     </div>
+     <div class="sliderImage" id="s7">
+         <a href="http://phys.org/news/2016-06-young-star-ripping-layers-close-orbiting.html"><img src="assets/img/Thumbs/C15.jpg" /></a>
+     </div>
+     <div class="sliderImage" id="s8">
+         <a href="http://phys.org/news/2016-06-alien-life-exoplanets-dies-young.html"><img src="assets/img/Thumbs/C16.jpg" /></a>
+     </div>
+   </div>
+
+
+<!--
+---------     --    --    -------     --------         ------    --------
+   --         --    --      --        --                 --      ---
+   --         --------      --        --------           --      --------
+   --         --    --      --              --           --            --
+   --         --    --    -------     --------         ------    --------
+
+
+   where the article goes.
+
+ -->
+
+        <div class="mainContent">
+          <p class="articleTitle">
+            The primate brain is 'pre-adapted' to face potentially any situation
+          </p>
+          <img class="articleImage" src="assets/img/Articles/B1.jpg" />
+          <p class="articleBody">
+
+            Scientists have shown how the brain anticipates all of the new situations that it may encounter in a lifetime by creating a special kind of neural network that is "pre-adapted" to face any eventuality. This emerges from a new neuroscience study published in PLOS Computational Biology.
+            </p>
+            <p class="articleBody">
+            Enel et al at the INSERM in France investigate one of the most noteworthy properties of primate behavior, its diversity and adaptability. Human and non-human primates can learn an astonishing variety of novel behaviors that could not have been directly anticipated by evolution—we now understand that this ability to cope with new situations is due to the "pre-adapted" nature of the primate brain.
+            </p>
+            <p class="articleBody">
+            This study shows that this seemingly miraculous pre-adaptation comes from connections between neurons that form recurrent loops where inputs can rebound and mix in the network, like waves in a pond, thus called "reservoir" computing. This mix of the inputs allows a potentially universal representation of combinations of the inputs that can then be used to learn the right behaviour for a new situation.
+            </p>
+            <p class="articleBody">
+            The authors demonstrate this by training a reservoir network to perform a novel problem solving task. They then compared the activity of neurons in the model with activity of neurons in the prefrontal cortex of a research primate that was trained to perform the same task. Remarkably, there were striking similarities in the activation of neurons in both the reservoir model and the primate.
+            </p>
+            <p class="articleBody">
+            This breakthrough shows that we have taken big step towards understanding the local recurrent connectivity in the brain that prepares primates to face unlimited situations. This research shows that by allowing essentially unlimited combinations of internal representations in the network of the brain, one of them is always on hand for the given situation.
+          </p>
+
+          <p class="articleSource">
+            Read more at: <a href="http://phys.org/news/2016-06-primate-brain-pre-adapted-potentially-situation.html#jCp">Phys.Org</a>
+          </p>
+          <p class="articleSource">
+            More information: Enel P, Procyk E, Quilodran R, Dominey PF (2016) Reservoir<br /> Computing Properties of Neural Dynamics in Prefrontal Cortex.<br /> PLoS Comput Biol 12(6): e1004967. DOI: 10.1371/journal.pcbi.1004967<br />
+            Journal reference: <a href="http://phys.org/journals/plos-computational-biology/">PLoS Computational Biology  </a><br />
+            Provided by: <a href="http://phys.org/partners/public-library-of-science/">Public Library of Science </a> <br />
+
+          </p>
+
+
+
+
+        </div>
+
+        <div class="contentColumnRight">
+            <div class="articleLink">
+                <a href="c31.html"><img class="C3" src="assets/img/Thumbs/C31.jpg" /> </a>
+            </div>
+            <div class="articleLink">
+                <a href="c32.html"><img class="C3" src="assets/img/Thumbs/C32.jpg" /></a>
+            </div>
+            <div class="articleLink">
+                <a href="c33.html"><img class="C3" src="assets/img/Thumbs/C33.jpg" /></a>
+            </div>
+            <div class="articleLink">
+              <a href="https://www.sciencenews.org/article/nanoparticles-beat-back-atherosclerosis">
+                <img class="C3" src="assets/img/Thumbs/C34.jpg" /></a>
+            </div>
+
+
+            </div>
+        </div>
+
+</body>
+
+</html>

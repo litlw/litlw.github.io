@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Words of Reddit</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/Sidebar-Menu.css">
+    <link rel="stylesheet" href="assets/css/Sidebar-Menu1.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <style>
+        .text {color: #bbb;}
+        .tab{margin-left: 40px;}
+
+        .title-text{
+            background-color: #000;
+            height: 4px;
+            width: 20px;
+            border-radius: 2px;
+        }
+
+        .greyText{color: #AAA;}
+        .text-muted, .synth{color: rgb(200,70,100);}
+        #ana-link{color: rgb(150, 40, 50);margin-top: 100px;}
+        span{padding: 30px;}
+        .vis{padding: 0px;}
+        .data-window{margin-top: 300px;;margin-bottom:300px;}
+        #sidebar-wrapper{background-color: RGB(200, 70, 100);}
+        .sidebar-nav>li>a, .sidebar-nav>li.sidebar-brand>a{color: white;}
+        .sidebar-nav>li>a:hover, .sidebar-nav>li.sidebar-brand>a:hover{margin-left:2px;}
+
+
+    </style>
+
+</head>
+
+<body onload="Bubble()">
+    <div id="wrapper">
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand synth"> <a href="#top">Top Words of Reddit </a></li>
+                <li> <a class="synth" href="#chart1">Old</a></li>
+                <li> <a class="synth" href="#chart2">New</a></li>
+                <li> <a class="synth" href="#chart3">Me</a></li>
+                <li> <a class="synth" href="#chart4">We</a></li>
+                <li> <a class="synth" href="#chart5">How</a></li>
+                <li> <a class="synth" href="#chart6">Why</a></li>
+                <li> <a class="synth" href="#chart7">Windows</a></li>
+                <li> <a class="synth" href="#chart8">Apple</a></li>
+                <li> <a class="synth" href="#chart9">Nintendo</a></li>
+                <li> <a class="synth" href="#chart10">Anyone</a></li>
+                <li> <a class="synth" href="#chart11">Computer</a></li>
+                <li> <a class="synth" href="#chart12">3D</a></li>
+                <li> <a class="synth" href="../HughPage/index.html">HOME</a></li>
+                <li><a class="synth" id="ana-link" href="https://drive.google.com/open?id=0B9l_yJ53hEoBcUJXUzhkREJXQUU">Source Files</a>  </li>
+            </ul>
+        </div>
+        <div class="page-content-wrapper">
+            <div class="container-fluid"><a class="btn btn-link" role="button" href="#menu-toggle" id="menu-toggle"><i class="fa fa-bars"></i></a>
+                <div class="row">
+                    <div class="col-md-12 col-md-offset-0">
+                      <div class="row">
+                        <div class="col-md-offset-2 col-md-8">
+                          <h1 class="greyText synth" >Top Words of Reddit</h1>
+                          <h3 class="greyText tab synth">By Hugh Ritchie</h3>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-md-12">
+
+                          <div class="row data-window">
+                            <!-- this frames one of the charts -->
+                            <div class="col-md-7">
+                              <div id="chart1">
+                                <!-- the actual graph -->
+                              </div>
+                            </div>
+                            <div class="col-md-offset-1 col-md-3">
+                              <!-- content about the piece -->
+                              <span class="text">
+                                <span class="synth">
+                                  <h1>
+                                    01 - OLD
+                                  </h1>
+                                </span>
+                                <span class="text-muted">
+                                  This visualization focuses on the frequency of key words in reddit in 2013. The data presented here is collected from 2,500 subreddits.
+                                </span> <br /><br />
+                                  My original intent was to bring together the various words that had been posted on reddit over time in 2013, hopefully to come up with something interesting.
+                              </span>
+                            </div>
+
+                          </div>
+
+
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-12">
+
+                          <div class="row data-window">
+                            <!-- this frames one of the charts -->
+                            <div class="col-md-offset-1 col-md-3">
+                              <!-- content about the piece -->
+                              <span class="text">
+                                <span class="synth">
+                                  <h1>
+                                    02 - NEW
+                                  </h1>
+                                </span>
+                                <span class="text-muted">
+                                  The pink text hidden amongst the visualization represents subreddits where this word is used more than 100 times.
+                                </span>
+                                <br /><br />
+                                  The result was somewhat unexpected. The data was 2,500,000 units, multiplied by how many words were in each title.
+                              </span>
+                            </div>
+                            <div class="col-md-offset-1 col-md-7">
+                              <div id="chart2">
+                                <!-- the actual graph -->
+                              </div>
+                            </div>
+                          </div>
+
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-12">
+
+                          <div class="row data-window">
+                            <!-- this frames one of the charts -->
+                            <div class="col-md-7">
+                              <div id="chart3">
+                                <!-- the actual graph -->
+                              </div>
+                            </div>
+                            <div class="col-md-offset-1 col-md-3">
+                              <!-- content about the piece -->
+                              <span class="text">
+                                <span class="synth">
+                                  <h1>
+                                    03 - ME
+                                  </h1>
+                                </span>
+                                <span class="text-muted">
+                                  Both the size and color of the bubbles in this visualization relate to frequency. If a bubble is bigger and darker, the word was used more frequently in that subreddit.
+                                </span>
+                                <br /><br />
+                                When I began I didn't know what to do. I was overwhelmed and frightened. At first I thought I would abandon this task.
+                                </span>
+                            </div>
+                          </div>
+
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-12">
+
+                          <div class="row data-window">
+                            <!-- this frames one of the charts -->
+                            <div class="col-md-offset-1 col-md-3">
+                              <!-- content about the piece -->
+                              <span class="text">
+                                <span class="synth">
+                                  <h1>
+                                    04 - WE
+                                  </h1>
+                                </span>
+                                <span class="text-muted">
+                                  Both color and size were used because, as you can see, the contrast in size is sometimes difficult to see.
+                                </span>
+                                <br /><br />
+                                But I was given inspiration by someone close to me. She showed me some tools that helped me to decipher all of this text.
+
+                              </span>
+                            </div>
+                            <div class="col-md-offset-1 col-md-7">
+                              <div id="chart4">
+                                <!-- the actual graph -->
+                              </div>
+                            </div>
+                          </div>
+
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-12">
+
+                          <div class="row data-window">
+                            <!-- this frames one of the charts -->
+                            <div class="col-md-7">
+                              <div id="chart5">
+                                <!-- the actual graph -->
+                              </div>
+                            </div>
+                            <div class="col-md-offset-1 col-md-3">
+                              <!-- content about the piece -->
+                              <span class="text">
+                                <span class="synth">
+                                  <h1>
+                                    05 - HOW
+                                  </h1>
+                                </span>
+                                <span class="text-muted">
+                                  The most discernable way to see which word is used more in more places is to look for the pink text. More pink text means more use across several different subreddits.
+                                </span>
+                                <br /><br />
+                                I began using python, and some hope came. After my first successes with parsing and analyzing data, I got more ambitious.
+                              </span>
+                            </div>
+                          </div>
+
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-12">
+
+                          <div class="row data-window">
+                            <!-- this frames one of the charts -->
+                            <div class="col-md-offset-1 col-md-3">
+                              <!-- content about the piece -->
+                              <span class="text">
+                                <span class="synth">
+                                  <h1>
+                                    06 - WHY
+                                  </h1>
+                                </span>
+                                <span class="text-muted">
+                                  What is clear so far is that commonly used words, as we have seen so far, are also used commonly. This is to be expected.
+                                </span>
+                                <br /><br />
+                                My ambition lead me to a wall. I had so much data that I didn't know what to do with. I had made 2, 500 separate sets of data, each set with nearly 11, 000 pieces of data.
+                              </span>
+                            </div>
+                            <div class="col-md-offset-1 col-md-7">
+                              <div id="chart6">
+                                <!-- the actual graph -->
+                              </div>
+                            </div>
+                          </div>
+
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-12">
+
+                          <div class="row data-window">
+                            <!-- this frames one of the charts -->
+                            <div class="col-md-7">
+                              <div id="chart7">
+                                <!-- the actual graph -->
+                              </div>
+                            </div>
+                            <div class="col-md-offset-1 col-md-3">
+                              <!-- content about the piece -->
+                              <span class="text">
+                                <span class="synth">
+                                  <h1>
+                                    07 - WINDOWS
+                                  </h1>
+                                </span>
+                                <span class="text-muted">
+                                  In this example, and in the later ones, we begin to see some different variation. How frequently does reddit use the word Windows, and who uses it the most?
+                                </span><br /><br />
+                                I had to reduce, to consolidate. I picked the top 20 non-operational words such as I, if, and, the, etc. From that list, I chose words from that list that matched up nicely.
+                              </span>
+                            </div>
+                          </div>
+
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-12">
+
+                          <div class="row data-window">
+                            <!-- this frames one of the charts -->
+                            <div class="col-md-offset-1 col-md-3">
+                              <!-- content about the piece -->
+                              <span class="text">
+                                <span class="synth">
+                                  <h1>
+                                    08 - APPLE
+                                  </h1>
+                                </span>
+                                <span class="text-muted">
+                                  The word Apple, as expected, is primarily used in a single subreddit. The others have far less usage. This is a suggestion that apple is a form of jargon.
+                                </span>
+                                <br /><br />
+                                The next step was to learn another new tool. D3 - the language that powers what you see before you.
+                              </span>
+                            </div>
+                            <div class="col-md-offset-1 col-md-7">
+                              <div id="chart8">
+                                <!-- the actual graph -->
+                              </div>
+                            </div>
+                          </div>
+
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-12">
+
+                          <div class="row data-window">
+                            <!-- this frames one of the charts -->
+                            <div class="col-md-7">
+                              <div id="chart9">
+                                <!-- the actual graph -->
+                              </div>
+                            </div>
+                            <div class="col-md-offset-1 col-md-3">
+                              <!-- content about the piece -->
+                              <span class="text">
+                                <span class="synth">
+                                  <h1>
+                                    09 - NINTENDO
+                                  </h1>
+                                </span>
+                                <span class="text-muted">
+                                  I was surpised by what turned out to be jargon. I was even more surprised to see where the jargon appeared.
+                                </span>
+                                <br /><br />
+                                How I did it is still a wonder. It was mostly piecing together pieces of other peoples work in order to make sense of the language. As I learned, I became confused.
+                              </span>
+                            </div>
+                          </div>
+
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-12">
+
+                          <div class="row data-window">
+                            <!-- this frames one of the charts -->
+                            <div class="col-md-offset-1 col-md-3">
+                              <!-- content about the piece -->
+                              <span class="text">
+                                <span class="synth">
+                                  <h1>
+                                    10 - ANYONE
+                                  </h1>
+                                </span>
+                                <span class="text-muted">
+                                  Maybe this jargon is related to the community.
+                                </span>
+                                <br /><br />
+                                After lots of fiddling I found a way to represent the data in a pool. The original pool was so big, it would take up this whole screen.
+                              </span>
+                            </div>
+                            <div class="col-md-offset-1 col-md-7">
+                              <div id="chart10">
+                                <!-- the actual graph -->
+                              </div>
+                            </div>
+                          </div>
+
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-12">
+
+                          <div class="row data-window">
+                            <!-- this frames one of the charts -->
+                            <div class="col-md-7">
+                              <div id="chart11">
+                                <!-- the actual graph -->
+                              </div>
+                            </div>
+                            <div class="col-md-offset-1 col-md-3">
+                              <!-- content about the piece -->
+                              <span class="text">
+                                <span class="synth">
+                                  <h1>
+                                    11 - COMPUTER
+                                  </h1>
+                                </span>
+                                <span class="text-muted">
+                                  Or maybe it isn't as surprising as I might have thought.
+                                </span>
+                                <br /><br />
+                                More importantly than that process, I had learned something important about word association, and about reddit as a whole.
+                              </span>
+                            </div>
+                          </div>
+
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-12">
+
+                          <div class="row data-window">
+                            <!-- this frames one of the charts -->
+                            <div class="col-md-offset-1 col-md-3">
+                              <!-- content about the piece -->
+                              <span class="text">
+                                <span class="synth">
+                                  <h1>
+                                    12 - 3D
+                                  </h1>
+                                </span>
+                                <span class="text-muted">
+                                  Either way. Thank you for coming and seeing this project. It was an excellent experience for myself, and an interesting experiment into reddit.
+                                </span>
+                                <br /><br />
+                                The words used in reddit say a lot about the importance of those words in jargon versus the importance in common language. More focused jargon subreddits have more jargon.
+                              </span>
+                            </div>
+                            <div class="col-md-offset-1 col-md-7">
+                              <div id="chart12">
+                                <!-- the actual graph -->
+                              </div>
+                            </div>
+                          </div>
+
+                        </div>
+                      </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            var win = window.innerWidth;
+            var size = win * 0.55;
+            var padding = 30;
+        </script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.3.0/d3.js"></script>
+        <script src="assets/js/Sidebar-Menu.js"></script>
+
+
+        <script src="js/script.js"></script>
+
+
+
+</body>
+
+</html>

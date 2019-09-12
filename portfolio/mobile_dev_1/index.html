@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- jquery script -->
+  <script
+  src="https://code.jquery.com/jquery-1.12.4.min.js"
+  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+  crossorigin="anonymous"></script>
+  <!-- jquery-mobile script -->
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.js"></script>
+  <!-- jquery-mobile css -->
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+  <!-- Lobster Font CDN -->
+  <link href="https://fonts.googleapis.com/css?family=Lobster+Two" rel="stylesheet">
+  <!-- bootstrap css -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+  <!-- bootstrap js -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <title></title>
+</head>
+
+<body>
+  <!-- styles -->
+  <style>
+    body{
+      background-color: #B1F6F0;
+    }
+    .header {
+      background: #666687;
+      padding: 4px;
+      color: white;
+      margin: 0px;
+    }
+    .noverflow{
+      overflow-y: scroll;
+    }
+    .text-center {
+      text-align: center;
+    }
+    .text-right {
+      text-align: right;
+      left: 100%;
+      float: right;
+    }
+    .noscroll {}
+    .myScript{
+      text-decoration: none;
+      font-family: 'Lobster Two';
+    }
+    .title{
+      width: 70%;
+      margin-left: 15%;
+      margin-top: 15%;
+    }
+    .footer{
+      position: absolute;
+      bottom: 0;
+    }
+    .navPane{
+      background: white;
+    }
+    #splash{
+      background-color: #FAA0A0;
+    }
+    #login{
+      padding-top: 30%;
+      background-color: white;
+      color: #FAA0A0;
+    }
+    .block{
+      padding: 4px;
+      border-radius: 18px;
+      margin: 5px;
+      text-align: center;
+    }
+    .login{
+      color: white;
+      background-color: #B1F6F0;
+    }
+    .submit{
+      background: #FAA0A0;
+      color: white;
+    }
+    .contact{
+      background: #fcfcff;
+      color: black;
+    }
+    .user{
+      color: grey;
+    }
+    .active{
+      color: #B1F6F0;
+    }
+    .inactive{
+      color: #FAA0A0;
+    }
+    i.inactive{
+      font-size: 2em;
+      margin: 8px;
+      margin-bottom: -6px;
+    }
+    .input{
+      display: inline-block;
+      width: 78%;
+    }
+    input{
+      background: rgba(255, 255, 255, 0.68)
+      border: none;
+      box-shadow: none;
+    }
+    .inputSubmit{
+      display: inline-block;
+      width: 20%;
+    }
+    .fixed{
+      position: fixed;
+      width: 100%;
+      margin-left: -4%;
+      margin-top: -4%;
+      z-index: +100;
+    }
+    .textBox{
+      padding: 10px;
+      border-radius: 20px;
+      margin: 4px;
+      color: #323256;
+    }
+
+    .recipient{
+      background: #FAA0A0;
+      max-width: 70%;
+      float: left;
+      display:table-row;
+    }
+    .sender{
+      background: #B1F6F0;
+      max-width: 70%;
+      float: right;
+      display: block;
+    }
+    .chatbox{
+      background: #B1F6F0;
+    }
+  </style>
+  <!-- end of styles -->
+
+  <!-- body of app -->
+
+  <!-- splash page -->
+  <div data-role="page" id="splash" class="ui-content">
+    <div role="main">
+      <a href="#login" transition="fade" transition-duration="2500">
+        <img src="Assets/LOGO.svg" class="title" />
+      </a>
+    </div>
+  </div>
+<!-- /splash page -->
+
+<!-- login page -->
+  <div data-role="page" id="login" class="ui-content">
+
+      <div role="main">
+        <a href="#login" transition="fade">
+          <img src="Assets/LOGO.svg" class="title" />
+        </a>
+      </div>
+
+    <div role="main">
+      <h3 class="myScript text-center">
+        Welcome Back,
+      </h3>
+      <div class="ui-grid-a">
+        <div class="block login">
+          <a href="user-template.html" data-rel="dialog">
+            <h3 class="myScript">
+              username
+            </h3>
+          </a>
+        </div>
+        <div class="block login">
+          <a href="pass-template.html" data-rel="dialog">
+          <h3 class="myScript">
+            password
+          </h3>
+        </a>
+        </div>
+        <div class="block submit">
+          <a href="#contacts" transition="fade">
+            <h3 class="myScript">
+              log in
+            </h3>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /login page -->
+  <!-- contacts page -->
+  <div data-role="page" id="contacts" class="ui-content">
+    <!-- body -->
+    <div class="header submit fixed">
+        <h3 class="myScript text-center">
+          Contacts
+        </h3>
+    </div>
+    <div data-role="main" class="noverflow">
+      <div class="header contact">
+        <div class="ui-grid-c">
+          <div class="ui-block-a">
+            <!-- this empty block is here as a spacer. because i am lazy. -->
+          </div>
+          <div class="ui-block-b">
+            <p>
+               <br />
+            </p>
+          </div>
+          <div class="ui-block-c">
+            <br />
+          </div>
+        </div>
+        <br />
+      </div>
+      <div class="header contact">
+        <div class="ui-grid-c">
+          <div class="ui-block-a">
+            <h3 class="user glyphicon glyphicon-user"></h3>
+          </div>
+          <div class="ui-block-b">
+            <p>
+              <!-- this is why I prefer angular. I prefer to just
+            have a ton of contacts on a json document, and iterate
+          through each contact. That way i can manage the data much easier.  -->
+              John Doe <br />
+              <text class="active">
+                Active
+              </text>
+            </p>
+          </div>
+          <div class="ui-block-c">
+            <a href="#chat" transition="fade-right">
+              <h3 class="glyphicon active glyphicon-comment text-right"></h3>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="header contact">
+        <div class="ui-grid-c">
+          <div class="ui-block-a">
+            <h3 class="user glyphicon glyphicon-user"></h3>
+          </div>
+          <div class="ui-block-b">
+            <p>
+              Jane Smith <br />
+              <text class="active">
+                Active
+              </text>
+            </p>
+          </div>
+          <div class="ui-block-c">
+            <a href="#chat" transition="fade-right">
+              <h3 class="glyphicon active glyphicon-comment text-right"></h3>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="header contact">
+        <div class="ui-grid-c">
+          <div class="ui-block-a">
+            <h3 class="user glyphicon glyphicon-user"></h3>
+          </div>
+          <div class="ui-block-b">
+            <p>
+              Natalie Filo <br />
+              <text class="active">
+                Active
+              </text>
+            </p>
+          </div>
+          <div class="ui-block-c">
+            <a href="#chat" transition="fade-right">
+              <h3 class="glyphicon active glyphicon-comment text-right"></h3>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="header contact">
+        <div class="ui-grid-c">
+          <div class="ui-block-a">
+            <h3 class="user glyphicon glyphicon-user"></h3>
+          </div>
+          <div class="ui-block-b">
+            <p>
+              Sophie Kessler<br />
+              <text class="active">
+                Active
+              </text>
+            </p>
+          </div>
+          <div class="ui-block-c">
+            <a href="#chat" transition="fade-right">
+              <h3 class="glyphicon active glyphicon-comment text-right"></h3>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="header contact">
+        <div class="ui-grid-c">
+          <div class="ui-block-a">
+            <h3 class="user glyphicon glyphicon-user"></h3>
+          </div>
+          <div class="ui-block-b">
+            <p>
+              David Fulde <br />
+              <text class="active">
+                Active
+              </text>
+            </p>
+          </div>
+          <div class="ui-block-c">
+            <a href="#chat" transition="fade-right">
+              <h3 class="glyphicon active glyphicon-comment text-right"></h3>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="header contact">
+        <div class="ui-grid-c">
+          <div class="ui-block-a">
+            <h3 class="user glyphicon glyphicon-user"></h3>
+          </div>
+          <div class="ui-block-b">
+            <p>
+              Jake Nate <br />
+              <text class="inactive">
+                Offline
+              </text>
+            </p>
+          </div>
+          <div class="ui-block-c">
+            <a href="#chat" transition="fade-right">
+              <h3 class="glyphicon inactive glyphicon-comment text-right"></h3>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="header contact">
+        <div class="ui-grid-c">
+          <div class="ui-block-a">
+            <h3 class="user glyphicon glyphicon-user"></h3>
+          </div>
+          <div class="ui-block-b">
+            <p>
+              Phil Jaimes Doe <br />
+              <text class="inactive">
+                Offline
+              </text>
+            </p>
+          </div>
+          <div class="ui-block-c">
+            <a href="#chat" transition="fade-right">
+              <h3 class="glyphicon inactive glyphicon-comment text-right"></h3>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /body -->
+    <!-- navbar -->
+    <div data-role="footer" data-id="nav" data-position="fixed">
+      <div data-role="navbar">
+        <ul>
+          <li>
+            <a class="ui-btn" data-rel="back" transition="fade-left">
+              <h3 class="glyphicon glyphicon glyphicon-arrow-left text-center"></h3>
+            </a>
+          </li>
+          <li>
+            <a class="ui-btn ui-btn-active" href="#contacts" transition="fade">
+              <h3 class="glyphicon glyphicon glyphicon-user text-center"></h3>
+            </a>
+          </li>
+          <li>
+            <a class="ui-btn" href="#chat" transition="fade">
+              <h3 class="glyphicon glyphicon glyphicon-comment text-center"></h3>
+            </a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+    <!-- /navbar -->
+
+  </div>
+  <!-- /contacts page -->
+  <!-- chat page -->
+  <div data-role="page" id="chat" class="ui-content">
+    <!-- body -->
+    <div data-role="header">
+      <div class="header submit fixed">
+        <div class="ui-grid-b">
+          <div class="ui-block-a">
+            <a data-rel="back" transition="fade-left">
+              <h3 class="glyphicon glyphicon-arrow-left text-center"></h3>
+            </a>
+          </div>
+          <div class="ui-block-b">
+            <h3 class="myScript text-center">
+              Chat
+            </h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div data-role="main">
+      <br /><br /><br />
+      <!-- gonna make some sample texts.  -->
+      <div class="ui-grid-a">
+        <div class="textBox recipient">
+          <text>Hey, I like a girl but I'm kinda nervous to ask her out ..</text>
+        </div>
+      </div>
+      <div class="ui-grid-a">
+        <div class="textBox sender">
+          <text>Just do it! I bet you $10 that she'll say yes :]</text>
+        </div>
+      </div>
+      <div class="ui-grid-a">
+        <div class="textBox recipient">
+          <text>Okay .. you want to go out with me?<3 </text>
+        </div>
+      </div>
+      <div class="ui-grid-a">
+        <div class="textBox sender ">
+          <text>Umm noo sorry not my type</text>
+        </div>
+      </div>
+      <div class="ui-grid-a">
+        <div class="textBox recipient ">
+          <text>Right</text>
+        </div>
+      </div>
+      <div class="ui-grid-a">
+        <div class="textBox recipient ">
+          <text>You owe me $10</text>
+        </div>
+      </div>
+
+    </div>
+    <!-- /body -->
+    <!-- navbar -->
+    <div data-role="footer" data-id="nav" data-position="fixed">
+      <div data-role="navbar">
+        <div class="header chatbox">
+            <div class="input">
+              <input type="text" name="chat-bubble"  placeholder="write something!">
+            </input>
+            </div>
+            <div class="inputSubmit">
+              <button class="glyphicon glyphicon-comment inactive text-center"></button>
+            </div>
+        </div>
+      </div>
+    </div>
+    <!-- /navbar -->
+
+  </div>
+  <!-- /chat page -->
+  <!-- end of body -->
+</body>
+
+</html>

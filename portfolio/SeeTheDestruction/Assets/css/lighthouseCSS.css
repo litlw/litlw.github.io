@@ -1,0 +1,267 @@
+@CHARSET "UTF-8";
+body {
+    margin: 0px;
+    padding: -100px;
+    width: 2000px;
+    background: #022;
+    overflow-y: hidden;
+}
+
+/*
+These are the background elements. They will probably change a lot, but it's important that for now I figure out thier orientation and use my knowledge so far.
+
+
+It seems I have several layers, so let's focus on z-index: 0 through -7. I know it's a lot, but it's worth it.
+
+The ID's are numbered by their closeness to the top.
+*/
+#clickbait{
+  z-index: +4;
+  position: absolute;
+  left: 2610px;
+  top: 210px;
+  width: 80px;
+  height: 60px;
+}
+
+#room {
+    z-index: +1;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 70%
+}
+#desk{
+  z-index: +1;
+  position: absolute;;
+  left: 0px;
+  top: 600px;
+}
+#computer{
+  z-index:+2;
+  position: absolute;
+  top: 140px;
+  left: 200px;
+}
+#vid{
+  z-index:+3;
+  position: absolute;
+  top: 157px;
+  left: 643px;
+}
+#radio{
+  z-index:+2;
+  position: absolute;
+  top: 220px;
+  left: 1400px;
+
+}
+
+#rain {
+    z-index: 0;
+    position: absolute;
+    top:0px;
+    left:0px;
+    display: block;
+    width: 3000px;
+    height:700px;
+    background-image: url("../img/stormy/rain1.gif");
+    background-repeat: repeat;
+}
+#rocks {
+    z-index: 0;position: absolute;
+    top: 330px;
+}
+#cloud1 {
+    z-index: -1;
+    position: absolute;
+    top: 0px;
+    animation: clouds 3s infinite;
+}
+#cloud2 {
+    z-index: -2;
+    position: absolute;
+    top: -20px;
+    animation: clouds 7s infinite;
+}
+#cloud3 {
+    z-index: -3;
+    position: absolute;
+    top: 50px;
+    animation: clouds 5s infinite;
+}
+#cloud4 {
+    z-index: -4;
+    position: absolute;
+    top: -40px;
+    animation: clouds 9s infinite;
+}
+#cloud5 {
+    z-index: -5;
+    position: absolute;
+    top: -40px;
+    animation: clouds 17s infinite;
+}
+#water1 {
+    z-index: -1;
+    display: inline-block;
+    position: relative;
+    top: 320px;
+    animation: waves 3s infinite;
+}
+#water2 {
+    z-index: -2;
+    position: relative;
+    top: 118px;
+    animation: waves 5s infinite;
+}
+#water3 {
+    z-index: -3;
+    position: relative;
+    top: -110px;
+    animation: waves 7s infinite;
+}
+#scene{
+  height: 0px;
+  width: 0px;
+  left: 2600px;
+  top: 0px;
+  display: inline-block;
+  position: absolute;
+  z-index: -6;
+  animation: scene 5s infinite;
+
+}
+#boat{
+  top: 200px;
+
+  position: relative;
+  width: 100px;
+}
+#flame1{
+  z-index: -3;
+  top: 30px;
+  left: 120px;
+  position: relative;
+  width: 30px;
+}
+#flame2{
+  z-index: -3;
+  top: 0px;
+  left:20px;
+  position: relative;
+  width: 80px;
+}
+#water4 {
+    z-index: -4;
+    position: relative;
+    top: -320px;
+    animation: waves 9s infinite;
+}
+#w{
+  height: 3100px;
+  width: 30000px;
+}
+.1water {
+    display: block;
+    left: 0px;
+    overflow-x: hidden;
+    width: 2000px;
+}
+.cloud {
+
+   height: 5300px;
+   width: 200px;
+}
+@keyframes waves {
+    0% {
+        left: 0px;
+    }
+    10% {
+        left: 5px;
+    }
+    20% {
+        left: 10px;
+    }
+    30% {
+        left: 15px;
+    }
+    40% {
+        left: 20px;
+    }
+    50% {
+        left: 15px;
+    }
+    60% {
+        left: 10px;
+    }
+    70% {
+        left: 5px;
+    }
+    80% {
+        left: 0px;
+    }
+    90% {
+        left: -5px;
+    }
+    100% {
+        left: 0px;
+    }
+}
+@keyframes clouds {
+    0% {
+        left: 0px;
+    }
+    30% {
+        left: -30px;
+    }
+    60% {
+        left: 3px;
+    }
+    100% {
+        left: 0px;
+    }
+}
+
+@keyframes scene{
+  0%{
+    top:0px;
+    left: 2600px;
+    transform:rotate(0deg);
+  }
+  16%{
+    top:-5px;
+    left:2602px;
+    transform:rotate(-0.1deg);
+  }
+  32%{
+    top:-5px;
+    left:2604px;
+    transform:rotate(-0.2deg);
+  }
+  48%{
+    top:0px;
+    left:2606px;
+    transform:rotate(-0.3deg);
+  }
+  64%{
+    top:0px;
+    left:2606px;
+    transform:rotate(0.1deg);
+  }
+  80%{
+    top:-5px;
+    left:2604px;
+    transform:rotate(0.2deg);
+  }
+  96%{
+    top:-5px;
+    left:2602px
+    transform:rotate(0.1deg);
+  }
+  100%{
+    top:0px;
+    left:2600px
+    transform:rotate(0deg);
+  }
+}

@@ -1,0 +1,1044 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Jekyll v3.8.5">
+  <title>Hugh Ritchie · The Honeybot Experiment</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+  <!-- Bootstrap core CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <!-- Custom styles for this template -->
+  <link href="./css/css/styles.css" rel="stylesheet" />
+
+  <!-- Scripts -->
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"></script>
+  <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.1.0/d3.min.js"></script> -->
+  <!-- My Scripts -->
+  <script src="scripts/animations.js"></script>
+  <script src="scripts/main.js"></script>
+</head>
+
+<body>
+  <nav class="d-sm-none d-xs-block fixed-top navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">Honeybot</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#top">Top</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" href="#intro">Intro</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" href="#setup">Setup</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" href="#hypothesis">Hypothesis</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" href="#results">Results</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" href="#conclusion">Conclusion</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" href="#background">Background</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" href="#timeline">Timeline</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" href="#bibliography">Bibliography</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" href="#bio">About Hugh</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+  <div class="container-fluid" id="voronoi">
+    <div class="row">
+      <div id="navbox" class="d-none d-sm-block col-sm-2 p1">
+        <div class="row">
+          <div class="navheader col-12 py-3">
+            <p>Navigation</p>
+          </div>
+          <a class="navlink active" href="#top">
+            <div class="col-12">
+              Top
+            </div>
+          </a>
+          <a class="navlink" href="#intro">
+            <div class="col-12">
+              Intro
+            </div>
+          </a>
+          <a class="navlink" href="#setup">
+            <div class="col-12">
+              Setup
+            </div>
+          </a>
+          <a class="navlink" href="#hypothesis">
+            <div class="col-12">
+              Hypothesis
+            </div>
+          </a>
+          <a class="navlink" href="#results">
+            <div class="col-12">
+              Results
+            </div>
+          </a>
+          <a class="navlink" href="#conclusion">
+            <div class="col-12">
+              Conclusion
+            </div>
+          </a>
+          <a class="navlink" href="#background">
+            <div class="col-12">
+              Background
+            </div>
+          </a>
+          <a class="navlink" href="#timeline">
+            <div class="col-12">
+              Timeline
+            </div>
+          </a>
+
+            <a class="navlink" href="#bibliography">
+              <div class="col-12">
+                Bibliography
+              </div>
+            </a>
+            <a class="navlink" href="#bio">
+              <div class="col-12">
+                About Hugh
+              </div>
+            </a>
+        </div>
+
+      </div>
+
+
+      <div id="main" class="offset-sm-2 col-sm-8 col-10 offset-1 mb-5">
+        <div class="d-sm-none d-xs-block spacer"></div>
+        <div class="row ">
+          <div class="col-sm-2">
+            <h1>Honeybot Experiment</h1>
+            <p class="text-muted">by Hugh Ritchie</p>
+          </div>
+
+        </div>
+        <div class="row even mt-5" id="top">
+          <div class="col-12 embed-responsive embed-responsive-16by9">
+            <video class="embed-responsive-item" muted autoplay loop>
+                  <source src='https://drive.google.com/uc?id=1-wkLnAfk9J3U8ih3sjaleR1K_jPAzuki' type="video/mp4"></source>
+              </video>
+          </div>
+
+
+
+
+        </div>
+        <div class="py-1" id="intro"></div>
+        <div class="row odd">
+          <!-- <img class="img-flex img-rounded" src="media/images/title.png"/> -->
+          <div class="col-2">
+            <h1>Intro</h1></div>
+          <div class="offset-sm-2 col-sm-8 py-5">
+
+            <p>
+              I wanted to build a machine that would be the subject of the attacks from the web. These attacks could actually show people what is going on. I think that a huge first step for teaching about what goes on “in the dark” is to just show it to them. I wanted
+              to find a way to do that.
+            </p>
+            <p>
+              First, I looked into a web manipulator, but almost immediately realized that it was too much of a risk on my computer and my personal network
+            </p>
+            <p>
+              I consulted some coworkers who have significantly more experience in this field than myself. Thomas Jack, a network analyst and enthusiast for data security and privacy; and Brendan Vincelli, a talented developer and enthusiast for open source and the
+              open data movement. Almost immediately they were excited to be a part of this experiment.
+            </p>
+            <p>
+              Quickly they explained to me that a web browser going around acting naively is not actually a good example of how data privacy is breached or broken. A much better example would be to show how a server gets attacked.
+            </p>
+            <p>
+              Brendan showed me a tool called <a href="http://www.dvwa.co.uk/">“Damn Vulnerable Web App”</a>, which is a training tool for network security people to practice their hacking skills in a safe environment.
+            </p>
+            <p>
+              The webapp is itself vulnerable, and thus I decided it would be a good guineapig. I went to a hosting site called <a href="https://www.digitalocean.com/">“Digital Ocean”</a> similar to AWS or google servers, but more hands-off (to allow
+              hacking to occur). A server on Digital Ocean is pretty cheap, at about 22 cents per hour, and is referred to as a droplet. I set up my droplet and began immediately to prepare for the extraction of data.
+            </p>
+            <p>
+              My plan: Collect all the syslogs, copy the syslogs to a google drive folder of a falsified account on google (for security purposes). Set Cron to run the copy script every 20 minutes (No idea how often I would get hacked, or how long until someone broke
+              the machine). As a final measure, make snapshots of the machine to ensure that I can “roll back” to a previous version in the case that someone had a “Home Run” and my computer’s root access was taken from me.
+            </p>
+            <p>
+              With script in hand and a vulnerable server I was set to go. But as soon as I started I visited the server itself. This wasn’t a fake app or a fake website, like I had hoped it would be (like a hosted store where someone could try their hand at stealing
+              data). This was a training terminal. Disappointed, I shut down the droplet and went back to the drawing board.
+            </p>
+            <p>
+              I locked down everything and went searching for a decent way to capture data about malicious online activity. After all my reading I was certain that there is something already made. I don’t need my machine to be destroyed, I just want to see what people
+              try to do.
+            </p>
+            <p>
+              By a stroke of luck in my research, I came upon an open source repository made by T Mobile. I heard that developers from many European companies (especially infosec) had been encouraged to write code and contribute to the open source community. This must
+              be one of those projects, I thought to myself. It did not have very much documentation, and it used other well-known open source tools (Including my favourite, Elasticsearch).
+            </p>
+            <p>
+              I downloaded and read through the files in the repository and set out to install it on my machine. I was hesitant at first – since it seemed that this would completely erase my work thus far on my virtual machine. Not only that, but it could also get
+              me banned. Generally, these hosting sites don’t want malicious activity on their servers. I took the risk anyways.
+            </p>
+            <p>
+              The installation process was difficult, and once the machine was installed and prepared, it didn’t work. It seems that in order for this to work, I would need to allocate more resources. I shut off the VM, increased my resource pool, and booted it up
+              again. Success! The machine was alive and well!
+            </p>
+            <p>
+              Three hours later It was down again. Hacked – defeated. The honeypot had been got. I was devastated, frantically trying to get access to my creation again. When I did get online I saw I had an uninvited visitor, and in a panic I immediately disconnected
+              and erased the machine. I started the whole process again, but this time with a seriously tough password. It was generated out of a hashing program, and it is super long. From what I have learned about brute force algorithms, this would
+              take at least a month to crack – more than enough time to blacklist an attacker.
+            </p>
+            <p>
+              With the machine up and running for 48 hours I was blown away by the numbers. My machine had been attacked ONE MILLION TIMES. I leaned back in my chair and took a deep breath. It was unbelievable. Most of it was from china, of course. As I peeled deeper
+              into the data, however , I saw so many surprising sources. So many corporations and organizations were tied to these attacks.
+            </p>
+            <p>
+              Of course, those companies are likely uninvolved. A hacker might just use those DNS names to hide their own identity. It’s unlikely a botnet would actually have its owner’s information attached to the headers of the attack. No one is that dumb.
+            </p>
+          </div>
+        </div>
+
+        <div class="py-1" id="setup"></div>
+        <div class="row even">
+          <div class="col-sm-2">
+            <h1>Setup</h1>
+          </div>
+          <div class="offset-sm-2 col-sm-8 py-5">
+
+            <img src="https://drive.google.com/uc?id=1pdpW8Odbv3cNdYOPpp_4V--OzkNltSDN" class="img-fluid"></img>
+            <br></br>
+            <img src="https://drive.google.com/uc?id=1OZDi1Ivnu39NFwFMVmUEBxhiHHy3QO4s" class="img-fluid pb-2"></img>
+            <br /> <br />
+
+            <video width="100%" controls src='https://drive.google.com/uc?id=1LRhwTCOmoVC3Bd6U19AE_3DxQejd4pd0' type="video/mp4" />
+
+
+            <p>
+              The setup for the HONEYBOT Experiment is made in three parts. The first part is the actual virtual machine. It has 6 gigs of ram, 120 gigs of storage, 4 VCPU’s and no added security. The original machine that I used was smaller, with fewer resources,
+              but it crashed far too quickly. It seems that the T-Pot software takes a significant amount of processing power. Either that, or it was under extremely heavy load from the attackers. </p>
+            <p>
+              The next part of the setup was the honeypot itself. It took me a while to find the right software to use. At first, I wanted to code my own honeypot, but quickly realized that it wouldn’t work very well. Then I pursued a different software, called DVWA
+              or Damn Vulnerable WebApp. According to all I had read, it was the perfect solution! What ended up being the problem was that it is not a honeypot – it is instead a testing tool for programmers to try out their hacking capabilities. This
+              was a training tool for Quality Assurance Engineers. I eventually stumbled upon T-Pot and was blown away by how much It had.
+            </p>
+            <p>
+              With my VM built, and my Honeypot software selected, it was a process of installing the honeypot, and making sure that I wouldn’t be unable to access my own machine. After several attempts, I was finally able to install Ubuntu, curl and install the package
+              on my headless box, and BAM it was running!
+            </p>
+            <p>
+              It crashed several times because of outside influences, and my first few passwords were not strong enough – but I did eventually get it working with some stability.
+            </p>
+          </div>
+        </div>
+
+
+
+
+
+        <div class="py-1" id="hypothesis"></div>
+        <div class="row odd">
+          <div class="col-sm-2">
+            <h1>Hypothesis</h1>
+
+          </div>
+          <div class="offset-sm-2 col-sm-8 py-5">
+            <div class="row">
+              <div class="col-1">
+                <i class="fa fa-lg fa-stopwatch text-center"></i>
+              </div>
+              <div class="col-sm-3 col-8">
+                <p><strong>   Duration</strong></p>
+
+              </div>
+              <div class="col-sm-8">
+                <p>
+
+                  I hypothesize that the machine will run for <strong>4 Days</strong> before it is either overloaded with traffic or brought down by hackers.
+                </p>
+                <p>
+
+                  From what I have been reading, the biggest thing to watch out for is a "home run" - which basically means losing control of your computer because a hacker has found an unstoppable way of getting in.
+                </p>
+
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-1">
+                <i class="fa fa-lg fa-fire-alt"></i>
+              </div>
+              <div class="col-sm-3 col-8">
+                <p><strong>Number Of Attacks</strong></p>
+              </div>
+              <div class="col-sm-8">
+                <p>
+                  My hypothesis in this experiment is that my honeypot will be attacked about <strong>100,000 Times</strong>. I know there are lots of players on the web, and that the hacking community is huge. That being said, I am not advertising my
+                  machine and I don’t know if it could even handle more traffic.
+
+                </p>
+                <p>
+                  From what I have read on the T-Pot site, the machine should be resilient enough to handle shutdowns, and temporary outages. That is good because I’m certain that DigitalOcean does regular backups that will probably disrupt my machine.
+                </p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-1">
+                <i class="fa fa-lg fa-globe"></i>
+              </div>
+              <div class="col-sm-3 col-8">
+                <p><strong>Source Of Attacks</strong></p>
+              </div>
+              <div class="col-sm-8">
+                <p>
+                  Also, from what I learned while reading <strong>Black Code</strong>, I also expect that most of these attacks will be coming from non-north American sources.
+                </p>
+                <p>
+                  My best guess, based on the ‘ghostnet’ scandal, as well as the recent news about Trump winning the election, is that the top countries will be either Russia or China. That is not a statement about those people, it is just a statement about the names of
+                  countries I have been hearing in the news associated with the recent data attacks.
+                </p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-1">
+                <i class="fa fa-lg fa-spider"></i>
+              </div>
+              <div class="col-sm-3 col-8">
+                <p><strong>Types Of Attacks</strong></p>
+              </div>
+              <div class="col-sm-8">
+                <p>
+                  I don’t have much to say about the types of attacks. I suspect the most common attack will be from the 'Cowrie' honeypot - which watches for <strong>SNMP (Simple Network Management Protocol) attacks</strong>.
+                </p>
+                <p>
+                  The reason why those will be the most common is that they are the least invasive. Someone can do an SNMP call on a machine from anywhere with little resistance. What that does is it returns the information about the machine – such as who is connected
+                  to it, where it is on the web, and what the machine is. It’s like a diagnostic report that can be pulled.
+                </p>
+                <p>
+                  The other more invasive attacks will happen as well, but I hypothesize that the attacks will be 80% Non-Invasive and 20% Invasive attacks.
+                </p>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+
+
+
+
+        <div class="py-1" id="results"></div>
+
+        <div class="row even">
+          <div class="col-sm-2">
+            <h1>Results</h1>
+          </div>
+
+          <div class="offset-sm-2 col-sm-8 py-5">
+
+            <div class="row mb-2">
+              <div align="center" class="col-12 embed-responsive embed-responsive-16by9">
+                <video class="embed-responsive-item" controls>
+                        <source src='https://drive.google.com/uc?id=1LRhwTCOmoVC3Bd6U19AE_3DxQejd4pd0' type="video/mp4"></source>
+                    </video>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-1">
+                <i class="fa fa-lg fa-stopwatch text-center"></i>
+              </div>
+              <div class="col-sm-3 col-8">
+                <p><strong>   Duration</strong></p>
+
+              </div>
+              <div class="col-sm-8">
+                <p>
+                  In my hypothesis, I proposed that the machine would run for 4 days. It ran for <strong>3 days.</strong> Just after the three day mark, the machine crashed. Because of the nature of the machine setup I was using, I can’t see what made
+                  the machine go down. (I can’t turn the machine on without connecting it to the internet)
+
+                </p>
+                <p>
+                  I was not hit by a home run - I was hit by a massive swarm of attacks.
+
+                </p>
+
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-1">
+                <i class="fa fa-lg fa-fire-alt"></i>
+              </div>
+              <div class="col-sm-3 col-8">
+                <p><strong>Number Of Attacks</strong></p>
+              </div>
+              <div class="col-sm-8">
+                <p>
+                  I hypothesized that the machine would be hit 100,000 times. The final number, however, was <strong>1,016,060 times. More than 100 times my original hypothesis.</strong>
+                </p>
+                <p>
+                  If these attacks were flies buzzing around you, <strong>they would block out your view of the sun</strong> - they would stop you from being able to breathe.
+                </p>
+                <p>
+                  What was really interesting was that the attacks did not come in at an even rate. From what I understood from my research, most attacks would come from constantly running scripts that hackers would setup and deploy.
+
+                </p>
+                <p>
+                  What happened instead is a serious increase in traffic after the first 24 hours. It feels like once I was online for long enough, the number of attackers increased - or the number of scripts they used to attack me increased.
+                </p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-1">
+                <i class="fa fa-lg fa-globe"></i>
+              </div>
+              <div class="col-sm-3 col-8">
+                <p><strong>Source Of Attacks</strong></p>
+              </div>
+              <div class="col-sm-8">
+                <p>
+                  The source of the attacks, it turns out, doesn’t matter. The reason I say this is that <strong>most of the attacks came from DigitalOcean</strong> - the same service I was using to run this honeypot. What that tells me is most hackers
+                  are using digital hosting services to carry out their activity.
+                </p>
+                <p>
+                  While normally I would say that the hosting companies should review what their machines are actually doing - it’s the same blindness that allowed me to do this project in the first place. It’s a hard balance to strike.
+                </p>
+                <p>
+                  One thing was for sure - the attacks were largely coming from America / American companies.
+                </p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-1">
+                <i class="fa fa-lg fa-spider"></i>
+              </div>
+              <div class="col-sm-3 col-8">
+                <p><strong>Types Of Attacks</strong></p>
+              </div>
+              <div class="col-sm-8">
+                <p>
+                  I was bang-on with the types of attacks. The overwhelming majority of attacks came from the Cowrie Honeypot, which watches for SNMP Attacks. I am not surprised by this result - considering that the <strong>SNMP Protocol is a common first step to investigating a computer. </strong>
+                </p>
+                <p>
+                  It’s something that companies use to investigate their own machines when something goes wrong. That being said, using SNMP to creep around someone else’s machine is trespassing.
+                </p>
+                <p>
+                  The relative difference between the SNMP attacks and the SSH attacks was approximately a <strong>10 to 1</strong>, while the other more complex attacks were closer a 100 to 1.
+                </p>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+        <div class="py-1" id="conclusion"></div>
+
+        <div class="row odd">
+          <div class="col-sm-2">
+            <h1>Conclusion</h1>
+          </div>
+
+          <div class="offset-sm-2 col-sm-8 py-5">
+            <p>
+              I learned in this exercise that there are significantly more attackers on the web than I had expected. My hypothetical numbers were blown out by so much and in such a short time. Not only that, but the short lifespan of my honeypots was just a reminder
+              that the security I set up for any future projects should really be tight.
+            </p>
+            <p>
+              I know that there are standards of practice like changing your ssh port and creating barriers to keep people out, but that still leaves hundreds of attacks that would have found another way in.
+            </p>
+            <p>
+              I wanted to explore this space so that I could show people what was happening in the web. What I found instead was that I was not even prepared for the numbers I found.
+            </p>
+            <p>
+              The single largest shock in reviewing the results was that the United States was by far the most common place for hackers to originate from. I also noticed that the service I used to host my own honeypot was the service that hosted a lot of these machines.
+              I guess that means that hackers have begun to use these services to run their own projects?
+            </p>
+            <p>
+              I haven’t had a chance to peel through the data of what the hackers did once inside the machine, but I am certain it’s not good stuff. I come away from this experience with confidence that the average computer is not secure. I wanted to encourage others
+              to think about privacy and to really consider whether their own app providers were secure, but now I am considering that for myself.
+            </p>
+            <p>
+              Imagine how often google gets attacked – imagine how viciously and constant those attacks must me.
+            </p>
+          </div>
+        </div>
+
+        <div class="py-1" id="background"></div>
+        <div class="row even">
+          <div class="col-sm-2">
+            <h1>Background</h1>
+
+          </div>
+          <div class="offset-sm-2 col-sm-8 py-5">
+            <p>
+              How aware are you of data privacy as an issue? How does technological literacy relate to that awareness? People tend to trust their apps because of a social investment in the technology. In Germany, for instance, a study was done with 674 responding student
+              participants mostly from the University of Salzburg was conducted (Fuchs, 177). This study featured a series of questions presented to both undergraduate and graduate students to assess their knowledge or understanding of data privacy. The
+              results of the study showed that 16.5% of students had zero of potential four correct answers, implying no understanding of data privacy and surveillance; 65.3% had one, implying a very low level of understanding; 16.5% had two correct answers;
+              and 1.8% had all three correct answers, showing a good understanding of data privacy and surveillance (Fuchs, 178).
+            </p>
+            <p>
+              In 2013, a European study called Eurobarometer was conducted with 16,244 EU citizens from several countries (Sobolewski, 211). In that group, 80% felt not in control over their own personal data. Of that 80%, 66% felt concerned about that fact (Sobolewski,
+              211). While that suggests an interest in their own data privacy, that same study showed that these participants were willing to hand over their personal data in exchange for very little compensation (Sobolewski, 212). Eurobarometer conducted
+              an adjacent study which found that Europeans are not taking the simplest actions to protect themselves, such as changing their privacy settings on their social media platforms (Sobolewski, 212). This is referred to as the “Privacy Paradox”
+              (Sobolewski, 212).
+            </p>
+            <img src="https://drive.google.com/uc?id=1QtjPlzgByJgG_gzdzmDAs00yFuYu0Zt7" class="img-fluid"></img>
+            <p>
+              In the wake of massive data leaks from Facebook, Ashley Madison, Target, and Equifax, users are clearly concerned about their data privacy (Fairclough, 1). Users might not take action to protect themselves – but the users also might not know enough to
+              be able to take action. Users clearly want more protection, more privacy, and more security. That being said, they might not even know how to ask for more privacy.
+            </p>
+            <img src="https://drive.google.com/uc?id=1nf2nJj-KOE8naIBofnAOG-lBzA5iCJF1" class="img-fluid" /> <br>
+            <p>
+              Council of Europe Data Privacy Convention (Greenleaf, 68). The groundwork set by these two large pieces of legislature would eventually grow into a cohesive data privacy plan that would inspire countries around the world to follow suit (Greenleaf, 70).
+              The number of data privacy laws enforced in the EU grew from the 1980’s through to today. In 1970, there were 8 data privacy laws; in the 1980’s, 13 new laws were introduced; in the 2000’s, 21 new laws were introduced; and between 2010 and
+              2012, 12 new laws had been introduced (Greenleaf, 69).
+            </p>
+            <p>
+              Of those new laws, was the Information Privacy Act (IPA), which focused on Health Education and Welfare of European people (Greenleaf, 71). The IPA plainly stated, “Data collected for one purpose should not be used or made available for other purposes
+              without consent" (Greenleaf, 71). The Data Protection Directive, which later produced the Data Protection Agency (DPA), added significantly stronger protections to Data Privacy (Greenleaf, 68). The DPA today is part of the EU’s international
+              Data policy when discussing data. The rules that the DPA laid out for a country to be considered to have sufficient data privacy laws in place are as follows: Does that country have a national law that monitors public and private sectors;
+              are there basic data privacy principles (according to OECD Guielines); and is there a statutory enforcement for these laws (Greenleaf, 69).
+            </p>
+            <p>
+              From a privacy and security standpoint, Convention 108 from the Council of Europe is the most significant addition to a legal corpus supporting users. Convention 108 is “the convention for the protection of individuals with regard to automatic processing
+              of personal data” (Greenleaf, 81). In other words, protections against growing Machine Learning and Artificial Intelligence methods of data processing. In addition to machine learning, Convention 108 seeks to limit the countries where that
+              data can go. It would behave a lot like border security for data in and out of the EU and supported countries. Not allowing specific traffic in or out of these countries on a base legal level means that the ability for producers of data
+              insights and machine learning tools, which house our personal identifiable data, to defend against and prosecute breaches of privacy is enhanced significantly.
+            </p>
+            <p>
+              'Black Code' by Ronald Deibert goes much more in depth to various other kinds of espionage and sale of data, which is interesting as a reader, but not to my thesis. The book is a recount of deibert’s lab, ‘Citizen Labs’ which investigates activity on
+              the web that is kept from our view. His lab receives lots of criticism from governments, scholars, and corporations – and yet it also is simply the lab trying to learn what they can about the web. What was so interesting about this book
+              was not only the massive conspiracies the lab uncovered, but the degree to which governments don’t want Deibert to be investigating or exposing the activity on the web.
+            </p>
+            <p>
+              In terms of the display of the information that I gathered, I turn to the grandfathers of Data Visualization. Edward Tufte and Jaques Bertin are the two most prolific researchers in this field – laying out the forms and structures, basic principles, and
+              best practices of the Visual Representation of data.
+            </p>
+            <p>
+              In Tufte’s book, ‘The Visual Display of Quantitative Information’, Tufte delivers an encyclopedic tome of visualization rules and definitions. These Definitions include the eight visual variables: Size, Colour, Value, Orientation, Shape , Position, Pattern,
+              and Texture. He also sets up the rules of what makes an ‘efficient’ visualization.
+            </p>
+            <p>
+              In Bertin’s book, ‘Semiology of Graphics, Diagrams, Networks, Maps’, the focus for Bertin is on the levels of reading a visualization. Bertin provides the framework for visual stimuli, broken into three categories: Monosemic, Polysemic, and Pansemic.
+              He follows up by explaining the three levels of reading or understanding a visualization: Elementary, Intermediate and Overall. These three levels are more like stages rather than actual levels, but they make testing for efficiency much
+              easier.
+            </p>
+            <p>
+              I want to explore some of these tools for visualization in my thesis.
+            </p>
+          </div>
+        </div>
+
+        <div class="py-1" id="timeline"></div>
+        <div class="row odd">
+          <div class="col-sm-2">
+            <h1>Timeline</h>
+            </div>
+            <div class="col-sm-8 offset-sm-2 py-5">
+              <div class="content">
+                  <h2>
+                  March
+                </h2>
+                <p>
+                    Leading up to the end of thesis, I focused on visualizing the results of my honeypot. The spider exhibit idea didn’t go as well as I had hoped. What I did instead is I set up a screenshot script on my ubuntu computer at home, and let it run (making sure it didn’t fall asleep).
+                </p>
+                <p>
+                    I designed my own version of the dashboard on the Kibana Server, and let the machine do it’s thing. With the Kibana server running, and my computer taking screenshots, I could make a time-lapse of the growth of the honeypot.
+                </p>
+                <p>
+                    The time lapse came out looking amazing - with some hiccups. The machine crashed pretty quickly, which I was a little surprised by. I checked the status of the machine several days later, and the stats showed that it was running fine - but when I went to see how the machine was doing via the web portal, it was not starting up.
+                </p>
+                <p>
+                    I turned that time lapse into a more narrative driven structure, and made some videos. That seemed the best way to show what was going on. This was interesting data to visualize - and the reason why is the data is most valuable while moving.
+                </p>
+                <p>
+                    Generally with data visualization, data is valuable in its own perspective - insights can be gathered and value can be delivered from those insights. With this data, the insights were tough to see - and the time-lapse revealed why. This is a visualization of attacks from attackers. Attacks are most interesting to observe as they happen - and this play-by-play of attacks is exactly that.
+                </p>
+              </div>
+              <div class="content">
+                <h2>February</h2>
+                <p>
+                  Taking this new direction on teaching about the web has helped me a lot. The general theme that I have gone with is
+                  to ask questions about how such an unfamiliar topic is covered. I remembered an exhibit in the ROM of spiders and
+                  thought that it was such a good way of conveying information about an 'icky' topic.
+                </p>
+                <p>
+                  Maybe comparing viruses, attackers, and bots to spiders and making an exhibit where people can come and see the
+                  bugs would work for me. It's a fun take, but it is also a chance for me to work with my data visualization tools.
+                </p>
+                <p>
+                  I signed up with DigitalOcean and have set up a droplet with 16 GB of ram, and 120 GB of storage. Hopefully that
+                  will be enough for me to collect sufficient data in my experiment. I have been encouraged to call this a curiosity
+                  based research methodology. It was a method that Geoffrey Hinton coined when he was investigating the potential of
+                  neural networks.
+                </p>
+                <p>
+                  Starting with the T-Pot toolset, I will set up a honeypot and start watching and recording what happens. I am late
+                  in the production of my thesis, but I need to pick a direction and just go with it.
+                </p>
+                <p>
+                  Computer Virus Spider Exhibit, here I come!
+                </p>
+              </div>
+              <div class="content">
+                <h2>January</h2>
+                <p>I'm re-writing my thesis to determine exactly what my thesis should be about. The overall topic of the EU vs
+                China in terms of data privacy and international data markets is far too big to cover. My new goal is to downsize
+              what I want to say into an accomplishable goal. </p>
+              <p>
+                My revised thesis is beginning to look like this:
+              </p>
+              <p class="text-red">
+                'What is the best way to teach average internet users about the hidden activity on the internet?’
+              </p>
+              <p>
+                That was feedback that I received in a review from another classmate. Thinking of this as a problem of
+                how to teach rather than what to teach has helped me completely re-think this thesis.
+              </p>
+              </div>
+              <div class="content">
+                <h2>December</h2>
+                <p>Over the winter break, I have been reviewing my research and I am excited for what will happen in the coming months. </p>
+                <p>
+                  The biggest piece of criticism was that my work was not connected to my research. That's a hard problem for me to tackle
+                  , mostly because I have a hard time summarizing this body of research.
+                </p>
+                <p>
+                  The other piece of criticism is that my creative work seems to heavily target apple products. I was definitely aware that
+                  I was targeting apple (and trust me they deserve the attention), but I guess I had overlooked that instead of telling
+                  people to be critical of their smartphones, I was just bashing Apple.
+                </p>
+                <p>
+                  My realy purpose with this thesis is to encourage people to think about the impact their smart devices have on their lives.
+                  Beside that, I also want people to think about the rights they give up when accepting these devices into their lifestyle.
+                </p>
+              </div>
+              <div class="content">
+                <h2>November</h2>
+                <p>
+                  In november I finished the three videos in the earlier description. I had already finished filming my own video and was told
+                  that I was better off using actual media, like ads.
+                </p>
+                <p>
+                  It was good advice, considering that the production quality would be so much higher than what I could produce on my own.
+                </p>
+                <p>
+                  I still wanted to hold onto the video that I had worked so hard to produce. Though fighting to keep those videos might have cost me in the end,
+                  I was happy to have them.
+                </p>
+              </div>
+              <div class="content">
+                <h2>October</h2>
+                <p>
+                  It is clear that I will not be able to base my thesis on data visualization. I don't have interesting data, there is no really interesting
+                  data in Canada's open data repository - nor Toronto's.
+                </p>
+                <p>
+                  The feedback has been mostly that I need to find something more interesting to work on.
+                </p>
+              </div>
+
+
+            </div>
+        </div>
+
+        <div class="py-1" id="bibliography"></div>
+
+        <div class="row even">
+          <div class="col-sm-2">
+            <h1>Bibliography</h1>
+          </div>
+
+          <div class="offset-sm-1 col-sm-9 py-5">
+            <ul class="bib">
+              <li>
+                <p>
+                  Adams, John. "Credit Sesame Brings Credit Score/Debt Management Service to Mobile Devices." <i>American Banker</i>, 22 Dec. 2011. Academic OneFile, <a href="http://link.galegroup.com.ocadu.idm.oclc.org/apps/doc/A275440951/AONE?u=toro37158&sid=AONE&xid=1979e750">http://link.galegroup.com.ocadu.idm.oclc.org/apps/doc/A275440951/AONE?u=toro37158&sid=AONE&xid=1979e750</a>.
+                  Accessed 20 Nov. 2018.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Alibaba. “Ant Financial Partner with Government to Build Jiangxi's Digital Economy." <i>China Telecom</i>, June 2018, p. 8. Academic OneFile, <a href="http://link.galegroup.com/apps/doc/A547533219/AONE?u=toro37158&sid=AONE&xid=58ff776d">http://link.galegroup.com/apps/doc/A547533219/AONE?u=toro37158&sid=AONE&xid=58ff776d</a>.
+                  Accessed 20 Nov. 2018.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Barone, Tom and Elliot W. Eisner. "What is and What is Not Arts Based Research?." <i>Arts Based Research. Thousand Oaks: SAGE Publications, Inc.</i>, 2012.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Bertin, J. “Semiology of Graphics, Diagrams, Networks, Maps”. University of Wisconsin Press, 1983. Madison Wisconsin, USA
+                </p>
+              </li>
+              <li>
+                <p>
+                  Chen, Chaochao, et al. "Distributed Collaborative Hashing and its Applications in Ant Financial.", 2018.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Choo, Kukhee. "Cool Governance: Japan's Ubiquitous Society, Surveillance, and Creative Industries." <i>Culture, Theory and Critique</i>, vol. 59, no. 2
+                </p>
+              </li>
+              <li>
+                <p>
+                  Dayen, David. "Big Tech: The New PREDATORY CAPITALISM." <i>The American Prospect</i>, Winter 2018.
+                </p>
+              </li>
+
+              <li class="annotated">
+                <p>
+                  Deibert, Ronald J. <i>Black Code: Surveillance, Privacy, and the Dark Side of the Internet.</i> Signal, 2013.
+                </p>
+                <div class="col-12">
+
+                  <p>
+                    Ronald Deibert, the head of Citizen Labs in Toronto, has a long and prolific history of involvement with data privacy. He and his lab were recommended to me for research by one of my advisors, and what I have learned from them and about them has been
+                    incredible even after just a few weeks of reading.
+                  </p>
+                  <p>
+                    Deibert’s book is a story of his lab’s journeys through the discovery and undoing of China’s ghostnet, as well as other journeys. On top of that, it is a critique and opinion piece from Deibert about data privacy overall. His book thus far has helped
+                    me position my thoughts in my own thesis. My direction of “What happens to you when you are compromised” as an introductory learning piece for everyday users is definitely inspired by what happened with the ghostnet story, as well
+                    as other stories that I read about in the news.
+                  </p>
+                  <p>
+                    The basic thesis is simple. Hackers rarely hack people for their identity – they hack for access, for mechanical resource, or for widespread intelligence gathering. The difference between access and widespread intelligence gathering is the precision with
+                    which a hacker might act. For access, a hacker would target someone specifically so that they can get closer to their true target. This often happens on a personal device or on a personal network of devices or area networks. Widespread
+                    intelligence gathering, on the other hand, is for the purpose of monitoring the consensus of devices over a very large network of people. This is often less invasive and also often less damaging to its victims. These two methods, however,
+                    are not mutually exclusive and can be part of the same strategy.
+                  </p>
+                  <p>
+                    Long story short – this article gave me focus.
+                  </p>
+                </div>
+              </li>
+              <li class="annotated">
+                <p>
+                  Fairclough, Bradyn. "Privacy piracy: the shortcomings of the United States' data privacy regime and how to fix it." <i>The Journal of Corporation Law</i>, Winter 2016, p. 461.
+                </p>
+                <div class="col-12">
+                  <p>
+                    With all of these sources in mind, this article was enlightening and useful to ground many of my arguments and thoughts. The reason is many events that have taken place in the US and internationally in terms of data privacy are mentioned in this article.
+                    It also outlined a series of very concerning (and therefore good argument points) topics of US data privacy. I know this is a contentious topic and changes at any given moment, but as of 2019 these laws have not changed or been improved.
+                  </p>
+                  <p>
+                    As I write, an inquiry is going on for Facebook’s massive data breach that has pulled in google, apple, and amazon. It is likely that this massive inquiry will end with regulatory laws for these companies and these actions, but I cannot write about what
+                    has not happened yet. This article makes clear that the US has no data privacy law. Not only that, but its own constitution favors the wrongdoer in most situations – citing the second amendment.
+                  </p>
+                  <p>
+                    I think that lots of people don’t know this is the case for the US (and largely also Canada), but it definitely has an impact on whether a person would support GDPR or not. I think that if more people knew what was happening with their data, and how utterly
+                    unprotected they are, then they would act very differently.
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <p>
+                  Finn, Jonathan. “Capturing the Criminal Image : From Mug Shot to Surveillance Society.” <i>University Of Minnesota Press</i>, 2009.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  Fuchs, Christian. "studiVZ: Social Networking in the Surveillance Society." <i>Ethics and Information Technology</i>, vol. 12, no. 2, 2010.
+                </p>
+              </li>
+
+              <li class="annotated">
+                <p>
+                  Greenleaf, Graham. “The influence of European data privacy standards outside Europe: implications for globalization of Convention 108.” <i>International Data Privacy Law</i>, Volume 2, Issue 2, 1 May 2012.
+                </p>
+                <div class="col-12">
+                  <p>
+                    This article served as an incredibly thorough explanation and overview of GDPR and Convention 108. It is also an excellent resource of “what’s going on internationally” as a review of data policies at a very high level from several different countries.
+                    Before my change in thesis direction, I was interested in the comparison between GDPR and the changes coming in the banking world of China with respect to private data (trust me there’s something there).
+                  </p>
+                  <p>
+                    Something that became very clear in this article is what GDPR could become. Reading through the potential impacts and responses to Convention 108 in GDPR was an inspiring moment in my research. The basic summary of Convention 108 is similar to the security
+                    that countries have installed at their borders and their airports. A complex system that checks for security risks and international threats as people enter the country. By simply changing some of the words around of that description,
+                    you have the gist of Convention 108. For instance: A complex system that checks for security risks and threats as users enter the national web space.
+                  </p>
+                  <p>
+                    There are other insights in this article, but Convention 108 is by far the most impactful and has the loudest resonance both for and against in respective communities.
+                  </p>
+
+                </div>
+              </li>
+
+              <li>
+                <p>
+                  Han, Dong. "The Market Value of Who We Are: The Flow of Personal Data and Its Regulation in China." <i>Media and Communication</i>, 5.2 (2017
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  Kanopy (Firm), and The Great Courses (Firm). “How Apple Raises Competitive Barriers.” <i>The Great Courses</i>, California, USA, 2015.
+                </p>
+              </li>
+
+              <li class="annotated">
+                <p>
+                  Kurzgesagt – In a Nutshell. “Safe and Sorry – Terrorism & Mass Surveillance.” <i>Youtube</i>, Kurzgesagt, Apr 14, 2016, <a href="https://www.youtube.com/watch?v=V9_PjdU3Mpo">https://www.youtube.com/watch?v=V9_PjdU3Mpo</a>.
+                </p>
+                <div class="col-12">
+                  <p>
+                    I often turn to Kurzgesagt for background knowledge on a subject. They often focus on very high level concepts of something that’s going on – and they hit privacy and security right on the head. The overall thesis of this video is that there is a balance
+                    to be struck between protecting ourselves and restricting ourselves from the freedoms that we should be entitled to. My thesis does not necessarily deal with terrorism or the impact of overprotective legislation, but these topics definitely
+                    inform some of the background of my research.
+                  </p>
+                  <p>
+
+                    Data privacy laws will be very similar to national privacy laws, except that these legislations have the portential to impact our day to day lives in our pockets and at homes. Not only that, but the privacy laws that could come into place (or the agreements
+                    between software companies and governments) could lead to us being compromised more ore being watched with greater ease.
+                  </p>
+                  <p>
+                    In my opinion, being watched as a core concept doesn’t bother me. What does bother me is who is watching me and why are they watching. Those two questions can be the difference between better healthcare and a new international battlegrounds for insurgence
+                    and data gathering.
+                  </p>
+                </div>
+              </li>
+
+              <li class="annotated">
+                <p>
+                  LastWeekTonight. “Facebook: Last Week Tonight with John Oliver (HBO).” <i>Youtube</i>, LastWeekTonight, Sep 23, 2018, <a href="https://www.youtube.com/watch?v=OjPYmEZxACM">https://www.youtube.com/watch?v=OjPYmEZxACM</a>.
+                </p>
+                <div class="col-12">
+                  <p>
+                    It can often be hard to keep up with the news and to keep up with the ever-growing collection of events that are leading both Canada and the US into different paths with respect to data privacy. This video is a helpful re-cap of what has happened thus
+                    far with American policy making and data privacy. It also makes special note of machine learning and third party data analysis. These are practices that are very common for those in the world of data analytics – but those capabilities
+                    turned at people can be horrifying to think of.
+                  </p>
+                  <p>
+                    The reason why those concepts are so frightening is explained in this video. Basically, if these companies were successful in guiding a population to vote a huge orange infant into the seat of President of the United States, then they surely have control
+                    over some decisions that voters are making. With access to that kind of influential media and access to machine learning, simply the interactions of people can model a government-leading data structure. Such a science fiction manifestation
+                    could be a very scary future to live in.
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <p>
+                  Laybats, Claire, and John Davies. "GDPR." <i>Business Information Review</i>, vol. 35, no. 2, 2018.
+                </p>
+              </li>
+
+              <li class="annotated">
+                <p>
+
+                  <i>Lo and Behold, Reveries of the Connected World</i>. Directed by Werner Herzog, Produced by Werner Herzog and Rupert Maconick, Magnolia Pictures, Publication date. January 23, 2016.
+                </p>
+                <div class="col-12">
+                  <p>
+                    This film is not just an influential piece in my thesis – but an influential piece for me as an individual going through life. There are many different courses and environments that one can go to for a thorough understanding of cyberspace. This film is
+                    simply a history of cyberspace, how the to’s and fro’s came to be, and how the contentious issue of surveillance, privacy, and government practice in cyberspace came to be.
+                  </p>
+                  <p>
+                    This film also covers the methods by which network communication occurs – and how those communications can be intercepted. The understanding that it provides was a foundation for me to better understand my interactions in cyberspace.
+                  </p>
+                  <p>
+
+                    One of the issues that is presented when discussing data privacy is either a lack of literacy or an excess of literacy. There are either people telling you they don’t understand technology and thus prefer not to talk about it, and there are people who
+                    will tell you that your understanding of technology is wrong. This film helped me and others understand how to communicate with either and that there are some skills required to cross these rifts.
+
+                  </p>
+                  <p>
+                    The overall gist of the film is a “how did technology get to this point? Where will it go next?”. It covers hacking and military operations; facebook and boston dynamics. It’s a very good and thorough look at technology today.
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <p>
+                  Lynch, Clifford, ‘How do your data grow?’, <i>Nature Publishing Group</i>, Volume 455, September 2008.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  Mehmood, Abid, I. Natgunanathan, Y. Xiang, G. Hua and S. Guo, "Protection of Big Data Privacy," in <i>IEEE Access</i>, vol. 4, 2016.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  Oecd.org. (2018). About the OECD - OECD. <a href="http://www.oecd.org/about/">http://www.oecd.org/about/</a>, Accessed 13 Nov. 2018.
+                </p>
+              </li>
+
+              <li>
+                Ong, Rebecca, “Recognition of the right to privacy on the Internet in China”, <i>International Data Privacy Law</i>, Volume 1, Issue 3, 1 August 2011.
+              </li>
+
+              <li>
+                <p>
+                  Rowley, Paul. "Navigating Brexit and GDPR." ITNow, vol. 58, no. 4, 12/01/2016.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  Robinson, Sandra. "Databases and Doppelgängers: New Articulations of Power." <i>Configurations</i>, vol. 26 no. 4, 2018, pp. 411-440. Project MUSE.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  Rutherford, Paul. “The New Icons?: The Art of Television Advertising.” <i>University of Toronto Press</i>, 1994;1995;2000.
+                </p>
+              </li>
+
+              <li class="annotated">
+                <p>
+                  Sobolewski, Maciej, et al. "GDPR: A Step Towards a User-Centric Internet?" <i>Inter Economics</i>, vol. 52, no. 4, 07/01/2017.
+                </p>
+                <div class="col-12">
+                  <p>
+                    Leading up to this article, I had generated a serious amount of interest in users’ perspective of data privacy. I already had done loads of research about GDPR, ANT financial, and various other players on the international stage. The overall story was
+                    already becoming clear to me – which is naïve but that’s how it felt. This article, however, opened it up when it presented the stats about the users in Europe and their perspective on Data Privacy and GDPR.
+                  </p>
+                  <p>
+                    The basic thesis of this article was; Is the EU, and potentially also the world, moving towards a user centric internet with freedoms and protections similar to those of national legislation by way of digital regulation? The arguments stem from adoption
+                    of GDPR and perception of GDPR. One of those arguments really sticks to the core of my thesis – do people support GDPR?
+                  </p>
+                  <p>
+                    It is made clear through field research that people do not really know what’s going on with data privacy – but they do care about data privacy. What was also clear was that the exchange of goods or services for a person’s data was a very uneven scale.
+                    The average user is / was giving away their precious identifiable data in exchange for nearly insignificant conveniences on their mobile devices.
+                  </p>
+                </div>
+              </li>
+
+
+
+
+
+              <li class="annotated">
+                <p>
+                  The New York Times. “How Cambridge Analytica Exploited the Facebook Data of Millions | NYT.” <i>Youtube</i>, The New York Times, April 9, 2018, <a href="https://www.youtube.com/watch?v=mrnXv-g4yKU">https://www.youtube.com/watch?v=mrnXv-g4yKU</a>.
+                </p>
+                <div class="col-12">
+
+                  <p>
+                    In an effort to keep up with the current times, I often turn to New York Times and Globe and Mail for resources. This video in particular covers the events that took place over an agreement between Cambridge Analytica and Facebook. This event, which is
+                    still shaking the world with respect to data privacy, is exactly what I want to combat. The entire documentation that New York Times provides – while 100% accurate – is indicitave of what people think is the real end point of data
+                    privacy being compromised. There is some discussion in the other academic work of the adversary and the researcher as two ethical poles of people who need data.
+                  </p>
+                  <p>
+                    This article discusses neither of them in depth, and simply says “oops we spilled your data”. Cambridge analytica poses itself to be a researcher – benign and in the interest of overall social growth – while in reality we have no idea whom else might
+                    have wanted to purchase data from that company – by way of the university research lab.
+                  </p>
+                  <p>
+                    I want to dissuade people from thinking a facebook data leak is the real risk. It is not. The real risk is what people might do to accomplish their nefarious goals – and what they might use you for in the process.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <p>
+                  Tufte, E. R.“The visual display of quantitative information”. Graphics Press. 2001. Cheshire, Conneticut
+
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  Wimmer, Kurt. "The Long Arm of the European Privacy Regulator: Does the New EU GDPR Reach U.S. Media Companies?" <i>Communications Lawyer</i>, Summer 2017.
+                </p>
+              </li>
+              <li>
+                Xu, Lei; C. Jiang, J. Wang, J. Yuan and Y. Ren, "Information Security in Big Data: Privacy and Data Mining," in <i>IEEE Access</i>, vol. 2, pp. 1149-1176, 2014.
+              </li>
+
+
+            </ul>
+
+          </div>
+
+
+        </div>
+          <div class="py-1" id="bio"></div>
+        <div class="row">
+            <div class="col-sm-4">
+                <h1>About Hugh</h1>
+                <image width="100%" src="https://drive.google.com/uc?id=1rVlig9PdLLg7j9se2KYN-fTNw1tCvbHG"></image>
+            </div>
+            <div class="col-sm-8 ">
+
+                <p>
+                    Hugh Ritchie is an Information Designer who specializes in Data Visualization. He studied Technology Design in the Digital Futures Program at OCAD University.
+                </p>
+                <p>
+                  Hugh has participated as a contributing member of the Visual Analytics Lab, collaborated with companies such as Globe and Mail, ESRI, and the BRAIN Institute from the MARS Center in Toronto.
+
+                </p>
+                <p>
+                  His work has been featured at York University and at the Ontario Centers of Excellence Expo in 2018.
+                </p>
+                <p>
+                    Currently, Hugh is working as a Data Visualization specialist, as well as a developer and data analyst in Berlin, Germany.
+                </p>
+            </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div id="controls" class="col-2 offset-10">
+        <div class="row">
+            <div class="navheader col-12">
+              <p>CONTROLS</p>
+            </div>
+
+        </div>
+
+      </div> -->
+  </div>
+
+  </div>
+  <div class="container-fluid">
+    <div class="row foot">
+      <div class="col-4 pt-5 foot">
+        <p>END</p>
+      </div>
+      <div class="col-4"></div>
+      <div class="col-4 pt-5 foot">
+        <p>
+          copyright hugh ritchie 2019
+
+        </p>
+        <p>This piece uses Music by <a href="https://icons8.com/music/author/denis-stelmach">Denis Stelmach</a> from <a href="https://icons8.com/music">Fugue</a></p>
+      </div>
+    </div>
+
+  </div>
+</body>
+
+</html>

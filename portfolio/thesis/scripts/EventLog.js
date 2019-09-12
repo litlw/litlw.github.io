@@ -1,0 +1,99 @@
+var e = [
+  {
+    't': [4.479458, 5.479458],
+    'm': 'GIVE US MORE'
+  }, {
+    't': [6.979458, 8.979458],
+    'm': 'WHAT AM I WORTH TO YOU'
+  }, {
+    't': [9.479458, 10.979458],
+    'm': 'IS IT WORTH WHAT I GIVE UP FREELY'
+  }, {
+    't': [11.479458, 12.479458],
+    'm': 'YOU KNOW WHERE I AM'
+  }, {
+    't': [12.979458, 13.979458],
+    'm': 'YOU KNOW WHAT I DO'
+  }, {
+    't': [14.479458, 15.979458],
+    'm': 'OFTEN BEFORE I HAVE DECIDED TO DO IT'
+  }, {
+    't': [16.479458, 17.479458],
+    'm': 'IN EXCHANGE FOR TECHNOLOGY AND DIGITAL SOCIETY'
+  }, {
+    't': [17.979458, 18.979458],
+    'm': 'I SIGNED AWAY MY RIGHT TO MY OWN IDENTITY'
+  }, {
+    't': [19.479458, 20.479458],
+    'm': 'TO BE PART OF A COMMUNITY OF STRANGERS'
+  }, {
+    't': [20.979458, 22.479458],
+    'm': 'I GIVE PERSMISSION TO LISTEN TO MY CALLS'
+  }, {
+    't': [22.979458, 23.45],
+    'm': 'I GIVE PERMISSION TO WATCH WHERE I GO'
+  }, {
+    't': [23.479458, 23.979458],
+    'm': 'I GIVE PERMISSION FOR YOU TO TARGET ME AND MY HABITS'
+  }, {
+    't': [24.479458, 24.979458],
+    'm': 'I GIVE PERMISSION FOR YOU TO SELL ME TO ANYONE'
+  }, {
+    't': [25.479458, 25.879458],
+    'm': 'I GIVE PERMISSION FOR YOU TO SELL ME FOR ANY AMOUNT'
+  }, {
+    't': [25.979458, 26.479458],
+    'm': 'I GIVE PERMISSION FOR YOU TO USE MY HISTORY AGAINST ME'
+  }, {
+    't': [26.979458, 27.279458],
+    'm': 'I GIVE UP OWNERSHIP OF DATA THAT I GENERATE EVERY DAY'
+  }, {
+    't': [27.479458, 29.479458],
+    'm': 'I AGREE TO ALL OF THIS BY CLICKING OK'
+  }, {
+    't': [30.486395, 31.486395],
+    'm': 'DATA IS THE NEW OIL'
+  }, {
+    't': [31.986395, 32.986395],
+    'm': 'COMPANIES SEE DATA PRIVACY AS INDUSTRY REGULATION'
+  }, {
+    't': [33.486395, 33.986395],
+    'm': 'WE NEED TO STOP GIVING OUR DATA AWAY'
+  }, {
+    't': [34.486395, 35.486395],
+    'm': 'WE NEED TO GET SOMETHING IN RETURN'
+  }, {
+    't': [35.986395, 40.486395],
+    'm': 'WE NEED TO TAKE OWNERSHIP OF OUR DATA'
+  }, {
+    't': [43.486395, 46.486395],
+    'm': 'PEOPLE THINK GDPR IS TOO EXTREME'
+  }, {
+    't': [46.986395, 49.486395],
+    'm': 'PEOPLE THINK GDPR WILL LIMIT BUSINESS COMPETITION'
+  }, {
+    't': [49.986395, 50.986395],
+    'm': 'THEY ARE RIGHT. IT WILL.'
+  }, {
+    't': [51.486395, 52.486395],
+    'm': 'BUT IT WILL ALSO PROTECT US'
+  }, {
+    't': [52.986395, 53.986395],
+    'm': 'GDPR WILL LIKELY CHANGE'
+  }, {
+    't': [54.486395, 55.486395],
+    'm': 'BUT WE NEED TO SUPPORT IT'
+  }, {
+    't': [55.986395, 56.986395],
+    'm': 'WE NEED BALANCE'
+  }, {
+    't': [57.486395, 58.486395],
+    'm': 'WE NEED PROTECTION'
+  }, {
+    't': [58.986395, 59.486395],
+    'm': 'WE NEED TO OWN OUR OWN DATA'
+  }, {
+    't': [59.986395, ],
+    'm': 'AFTER ALL, WE MADE IT'
+  }
+]

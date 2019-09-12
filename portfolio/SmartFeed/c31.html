@@ -1,0 +1,285 @@
+<!DOCTYPE HTML>
+<meta charset="utf-8" />
+<html>
+
+<head>
+    <link rel="stylesheet" href="assets/css/mode.css">
+    <link rel="stylesheet" type="text/css" href="assets/js/slick-1.6.0/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="assets/js/slick-1.6.0/slick/slick-theme.css" />
+
+
+    <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/slick-1.6.0/slick/slick.min.js"></script>
+
+    <title>
+        SmartFeed
+    </title>
+</head>
+
+<body>
+    <script>
+        $(document).ready(function() {
+            $("#mySlider").slick({
+                infinite: true,
+                slidesToShow: 6,
+                slidesToScroll: 3,
+                autoplay: true,
+                autoplaySpeed: 2000
+            });
+            $("#more").hover(function() {
+                $("#moreText").show();
+
+            }, function() {
+                $("#moreText").hide()
+
+            });
+            $("#moreText").hover(function() {
+                $("#moreText").show();
+
+            }, function() {
+                $("#moreText").hide();
+
+            });
+
+        });
+    </script>
+
+<!--
+This is the main menu that people are supposed to use. the grey one.
+ -->
+
+    <div id="titleFrameLower">
+        <div id="blockLinks">
+            <div class="blockLink">
+                <a href="" class="blockLinkText">
+          News
+        </a>
+            </div>
+            <div class="blockLink">
+                <a href="" class="blockLinkText">
+          Videos
+        </a>
+            </div>
+            <div class="blockLink">
+                <a href="" class="blockLinkText">
+          Quizzes
+        </a>
+            </div>
+            <div class="blockLink">
+                <a href="" class="blockLinkText">
+          Food
+        </a>
+            </div>
+            <div class="blockLink">
+                <a href="" class="blockLinkText">
+          DIY
+        </a>
+            </div>
+            <div class="blockLink">
+                <span id="more" class="blockLinkText">
+          More
+        </span>
+                <div id="moreText">
+                </div>
+            </div>
+        </div>
+    </div>
+<!--
+MainFrame is the window that rests behind the menu, it contains all the stuff.
+-->
+
+    <div id="mainFrame">
+        <div id="titleFrameUpper">
+          <a href="main.html" id="title">
+              SmartFeed
+          </a>
+<!--
+These are the buttons on the far right WHICH DONT DO A FUCKING THING
+ -->
+            <div id="titleFrameLinks">
+                <div class="buttonLink">
+                    <img class="buttonLink" src="assets/img/Arrow.png" />
+                </div>
+                <div class="buttonLink">
+                    <img class="buttonLink" src="assets/img/wtf.png" />
+                </div>
+                <div class="buttonLink">
+                    <img class="buttonLink" src="assets/img/cute.png" />
+                </div>
+                <div class="buttonLink">
+                    <img class="buttonLink" src="assets/img/omg.png" />
+                </div>
+                <div class="buttonLink">
+                    <img class="buttonLink" src="assets/img/win.png" />
+                </div>
+                <div class="buttonLink">
+                    <img class="buttonLink" src="assets/img/LOL.png" />
+                </div>
+            </div>
+        </div>
+
+<!--
+This is the slider that should be at the top of every page.
+ -->
+
+ <div id="mySlider" class="theSlider">
+     <div class="sliderImage" id="s1">
+         <a href="c11.html"><img src="assets/img/Thumbs/C11.jpg" /></a>
+     </div>
+     <div class="sliderImage" id="s2">
+         <a href="c21.html"><img src="assets/img/Thumbs/C21.jpg" /></a>
+     </div>
+     <div class="sliderImage" id="s3">
+         <a href="http://neurosciencenews.com/consciousness-dimensions-neuroscience-4420/"><img src="assets/img/Thumbs/C23.jpg" /></a>
+     </div>
+     <div class="sliderImage" id="s4">
+         <a href="http://neurosciencenews.com/microbes-alzheimers-neurology-3826/"><img src="assets/img/Thumbs/C26.jpg" /></a>
+     </div>
+     <div class="sliderImage" id="s5">
+         <a href="http://phys.org/news/2016-06-scientists-supermassive-black-hole-cold.html"><img src="assets/img/Thumbs/C14.jpg" /></a>
+     </div>
+     <div class="sliderImage" id="s6">
+         <a href="http://phys.org/news/2016-06-mars-orbiters-reveal-seasonal-storm.html"><img src="assets/img/Thumbs/C13.jpg" /></a>
+     </div>
+     <div class="sliderImage" id="s7">
+         <a href="http://phys.org/news/2016-06-young-star-ripping-layers-close-orbiting.html"><img src="assets/img/Thumbs/C15.jpg" /></a>
+     </div>
+     <div class="sliderImage" id="s8">
+         <a href="http://phys.org/news/2016-06-alien-life-exoplanets-dies-young.html"><img src="assets/img/Thumbs/C16.jpg" /></a>
+     </div>
+
+
+<!--
+---------     --    --    -------     --------         ------    --------
+   --         --    --      --        --                 --      ---
+   --         --------      --        --------           --      --------
+   --         --    --      --              --           --            --
+   --         --    --    -------     --------         ------    --------
+
+
+   where the article goes.
+
+ -->
+
+        <div class="mainContent">
+          <p class="articleTitle">
+            Francis Crick’s good luck revolutionized biology
+          </p>
+          <img class="articleImage" src="assets/img/Articles/C31.jpg" />
+          <p class="articleBody">
+            When Francis Crick was 31, he decided he needed to change his luck. As a graduate student in physics during World War II, his research hadn’t gone so well; his experiment was demolished by a bomb. To beat the war, he joined it, working on naval warfare mines for the British Admiralty.
+</p>
+<p class="articleBody">
+
+After the war, he sought a new direction.
+</p>
+<p class="articleBody">
+
+“There are lots of ways of being unlucky,” Crick told me in an interview in 1998. “One is sticking to things too long. Another is not adventuring at all.”
+</p>
+<p class="articleBody">
+
+He decided to adventure.
+</p>
+<p class="articleBody">
+
+Molecular biologists everywhere will celebrate that decision on June 8, the centennial of Crick’s birth, in Weston Favell, Northampton, England, in 1916.
+</p>
+<p class="articleBody">
+
+“Crick was one of the central figures, one might say the central figure, in the molecular revolution that swept through biology in the latter half of the 20th century,” science historian Robert Olby wrote in a biographical sketch.
+</p>
+<p class="articleBody">
+
+In 1953, at the University of Cambridge, Crick and his collaborator James Watson figured out how life’s most important molecule, deoxyribonucleic acid, was put together. DNA, the stuff that genes are made of, became the most famous of biological molecules. Today the image of its double helix structure symbolizes biology itself. It would be easy to make the case that discovering DNA’s structure was the single greatest event in the history of biology — and always will be. In 1962, Watson and Crick won the Nobel Prize for their work (which was, of course, greatly aided by X-ray diffraction imagery from Rosalind Franklin, who unfortunately died before the Nobel was awarded).
+</p>
+<p class="articleBody">
+
+Crick’s DNA adventure began at a time when molecular biology was ripe for revolution. But Crick didn’t know that. His choice was lucky.
+</p>
+<p class="articleBody">
+
+“I had no idea when I started that molecular biology would advance so fast,” he said. “No idea at all.”
+</p>
+<p class="articleBody">
+
+In fact, Crick very nearly chose a different path. His interest in genes was equaled by his curiosity about the brain. Both were topics that he liked to gossip about.
+</p>
+<p class="articleBody">
+
+“But I didn’t know enough about either subject,” he said. He just knew a little bit more about biochemistry.
+</p>
+<p class="articleBody">
+
+“I thought ‘Well look, I have a training in physics and I know a bit of chemistry, I don't know anything about the brain.’” So he decided it would be more sensible to start with genes.
+</p>
+<p class="articleBody">
+
+“I thought that problem of what genes were and how they replicate and what they did would last me the rest of my life,” he said.
+</p>
+<p class="articleBody">
+
+As it happened, genes did occupy him for a couple of decades. Crick made major contributions to elucidating the genetic code during that time. But he never forgot his interest in the brain, and more specifically, consciousness. In the 1970s, he moved from England to California, where he began consciousness research in San Diego at the Salk Institute for Biological Studies.
+</p>
+<p class="articleBody">
+
+Consciousness turned out to be a much tougher problem than understanding genes. In retrospect, Crick could see why.
+</p>
+<p class="articleBody">
+
+With genetics, “what really made the thing was the simplicity of the double helix. It wrote the whole research program,” he said. “It probably goes back to near the origin of life, when things had to be simple.” Consciousness appeared on the scene only much later, after the evolution of the brain’s vast complexity.
+</p>
+<p class="articleBody">
+
+Nevertheless, Crick perceived parallels between genetics and consciousness as subjects for scientific inquiry. As the 20th century came to an end, he mused that consciousness as a concept remained vague — researchers did not all agree about what the word meant. The situation with genes had at one time been similar.
+</p>
+<p class="articleBody">
+
+“In a sense people were just as vague about what genes were in the 1920s as they are now about consciousness,” Crick said. “It was exactly the same. The more professional people in the field, which was biochemistry at that time, thought that it was a problem that was too early to tackle. And I think they were right in the ’20s.”
+</p>
+<p class="articleBody">
+
+At the end of the 20th century, research on consciousness found itself in much the same state.
+</p>
+<p class="articleBody">
+
+“Everybody agrees that it’s an interesting question,” Crick said, “but there are two points of view among scientists: One is that it isn’t a scientific question and is best left to philosophers. And the other one is that, even if it’s a scientific question, it’s too early to tackle it now.”
+</p>
+<p class="articleBody">
+
+Crick tackled it anyway. Until his death in 2004, he worked vigorously on the subject with his collaborator Christof Koch, making substantial inroads into identifying the brain activity associated with conscious awareness. Crick was not lucky enough to solve the problem of consciousness, but he perhaps brought the arrival of that solution a little closer.
+
+
+          </p>
+
+          <p class="articleSource">
+            Read More At <a href="https://www.sciencenews.org/blog/context/francis-crick%E2%80%99s-good-luck-revolutionized-biology">ScienceNews</a>
+
+          </p>
+
+
+          </p>
+
+        </div>
+
+        <div class="contentColumnRight">
+            <div class="articleLink">
+                <img class="C3" src="assets/img/Thumbs/C31.jpg" />
+            </div>
+            <div class="articleLink">
+                <img class="C3" src="assets/img/Thumbs/C32.jpg" />
+            </div>
+            <div class="articleLink">
+                <img class="C3" src="assets/img/Thumbs/C33.jpg" />
+            </div>
+            <div class="articleLink">
+                <img class="C3" src="assets/img/Thumbs/C34.jpg" />
+            </div>
+
+
+            </div>
+        </div>
+
+</body>
+
+</html>

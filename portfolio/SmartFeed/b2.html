@@ -1,0 +1,233 @@
+
+<!DOCTYPE HTML>
+<meta charset="utf-8" />
+<html>
+
+<head>
+    <link rel="stylesheet" href="assets/css/mode.css">
+    <link rel="stylesheet" type="text/css" href="assets/js/slick-1.6.0/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="assets/js/slick-1.6.0/slick/slick-theme.css" />
+
+
+    <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/slick-1.6.0/slick/slick.min.js"></script>
+
+    <title>
+        SmartFeed
+    </title>
+</head>
+
+<body>
+    <script>
+        $(document).ready(function() {
+            $("#mySlider").slick({
+                infinite: true,
+                slidesToShow: 6,
+                slidesToScroll: 3,
+                autoplay: true,
+                autoplaySpeed: 2000
+            });
+            $("#more").hover(function() {
+                $("#moreText").show();
+
+            }, function() {
+                $("#moreText").hide()
+
+            });
+            $("#moreText").hover(function() {
+                $("#moreText").show();
+
+            }, function() {
+                $("#moreText").hide();
+
+            });
+
+        });
+    </script>
+
+<!--
+This is the main menu that people are supposed to use. the grey one.
+ -->
+
+    <div id="titleFrameLower">
+        <div id="blockLinks">
+            <div class="blockLink">
+                <a href="" class="blockLinkText">
+          News
+        </a>
+            </div>
+            <div class="blockLink">
+                <a href="" class="blockLinkText">
+          Videos
+        </a>
+            </div>
+            <div class="blockLink">
+                <a href="" class="blockLinkText">
+          Quizzes
+        </a>
+            </div>
+            <div class="blockLink">
+                <a href="" class="blockLinkText">
+          Food
+        </a>
+            </div>
+            <div class="blockLink">
+                <a href="" class="blockLinkText">
+          DIY
+        </a>
+            </div>
+            <div class="blockLink">
+                <span id="more" class="blockLinkText">
+          More
+        </span>
+                <div id="moreText">
+                </div>
+            </div>
+        </div>
+    </div>
+<!--
+MainFrame is the window that rests behind the menu, it contains all the stuff.
+-->
+
+    <div id="mainFrame">
+        <div id="titleFrameUpper">
+            <a href="main.html" id="title">
+                SmartFeed
+            </a>
+<!--
+These are the buttons on the far right WHICH DONT DO A FUCKING THING
+ -->
+            <div id="titleFrameLinks">
+                <div class="buttonLink">
+                    <img class="buttonLink" src="assets/img/Arrow.png" />
+                </div>
+                <div class="buttonLink">
+                    <img class="buttonLink" src="assets/img/wtf.png" />
+                </div>
+                <div class="buttonLink">
+                    <img class="buttonLink" src="assets/img/cute.png" />
+                </div>
+                <div class="buttonLink">
+                    <img class="buttonLink" src="assets/img/omg.png" />
+                </div>
+                <div class="buttonLink">
+                    <img class="buttonLink" src="assets/img/win.png" />
+                </div>
+                <div class="buttonLink">
+                    <img class="buttonLink" src="assets/img/LOL.png" />
+                </div>
+            </div>
+        </div>
+
+<!--
+This is the slider that should be at the top of every page.
+ -->
+
+ <div id="mySlider" class="theSlider">
+     <div class="sliderImage" id="s1">
+         <a href="c11.html"><img src="assets/img/Thumbs/C11.jpg" /></a>
+     </div>
+     <div class="sliderImage" id="s2">
+         <a href="c21.html"><img src="assets/img/Thumbs/C21.jpg" /></a>
+     </div>
+     <div class="sliderImage" id="s3">
+         <a href="http://neurosciencenews.com/consciousness-dimensions-neuroscience-4420/"><img src="assets/img/Thumbs/C23.jpg" /></a>
+     </div>
+     <div class="sliderImage" id="s4">
+         <a href="http://neurosciencenews.com/microbes-alzheimers-neurology-3826/"><img src="assets/img/Thumbs/C26.jpg" /></a>
+     </div>
+     <div class="sliderImage" id="s5">
+         <a href="http://phys.org/news/2016-06-scientists-supermassive-black-hole-cold.html"><img src="assets/img/Thumbs/C14.jpg" /></a>
+     </div>
+     <div class="sliderImage" id="s6">
+         <a href="http://phys.org/news/2016-06-mars-orbiters-reveal-seasonal-storm.html"><img src="assets/img/Thumbs/C13.jpg" /></a>
+     </div>
+     <div class="sliderImage" id="s7">
+         <a href="http://phys.org/news/2016-06-young-star-ripping-layers-close-orbiting.html"><img src="assets/img/Thumbs/C15.jpg" /></a>
+     </div>
+     <div class="sliderImage" id="s8">
+         <a href="http://phys.org/news/2016-06-alien-life-exoplanets-dies-young.html"><img src="assets/img/Thumbs/C16.jpg" /></a>
+     </div>
+   </div>
+
+
+<!--
+---------     --    --    -------     --------         ------    --------
+   --         --    --      --        --                 --      ---
+   --         --------      --        --------           --      --------
+   --         --    --      --              --           --            --
+   --         --    --    -------     --------         ------    --------
+
+
+   where the article goes.
+
+ -->
+
+        <div class="mainContent">
+          <p class="articleTitle">
+            Human Connectome Project Marks Its First Phase
+          </p>
+          <p class="articleBody"><strong>
+            Brain connectivity gets personal, as an individual’s scans predict behavior.</strong></p>
+          <p class="articleBody">
+            Scans of an individual’s brain activity are emerging as powerful predictive tools, thanks to the Human Connectome Project (HCP), an initiative of the National Institutes of Health. Such individual differences were often discarded as “noise” – uninterpretable apart from group data. Now, recently reported studies based on HCP neuroimaging and psychological data show that individual differences in brain connectivity can reliably predict a person’s behavior. Such scans might someday help clinicians personalize diagnosis and treatment of mental disorders, say researchers.
+          </p>
+          <p class="articleBody">
+            One study (link is external) found that an individual’s unique resting state connectivity “fingerprint” can accurately predict fluid intelligence. Another developed a model (link is external) that similarly predicted individuals’ performance on a variety of tasks, including reading and decision-making. Notably, no brain scans or psychological tests were required specifically for these studies; instead, the researchers drew upon an unprecedented trove of shared data from more than a thousand subjects made available by the HCP.
+          </p>
+          <p class="articleBody">
+            This database is one of the achievements being showcased this month, as the NIH celebrates completion of the HCP’s first phase. A symposium, open to the public, spotlighting HCP’s successes to date, will be held on the NIH campus in Bethesda, Maryland, June 20, 2016, 12:30 – 5:30 p.m. ET. It will also be videocast worldwide.
+          </p>
+          <p class="articleBody">
+            In 2010, NIH awarded two HCP grants to map the human brain’s connections in high resolution. The aim was to understand the connections of the healthy human brain to establish a baseline that would help identify connectivity abnormalities in brain disorders. The grants supported two research consortia, one led by researchers at Washington University, in St. Louis, and the University of Minnesota; the other led by investigators at Massachusetts General Hospital (MGH)/Harvard University, Boston, and the University of California Los Angeles (UCLA).
+          </p>
+          <p class="articleBody">
+            The MGH/UCLA consortium built a custom “Connectom” scanner with advanced diffusion MRI technology that can visualize the brain’s networks in 10-fold higher detail than conventional scanners. At least two other leading research centers have recently adopted the HCP-designed high-powered diffusion imaging scanners – which boost resolving power via magnetically stronger copper coils, called gradients.
+          </p>
+          <img class="articleImage" src="assets/img/Articles/B2.jpg" />
+          <p class="articleBody">
+            This High Angular Resolution Diffusion Image (HARDI) of the human brain shows long distance connections, or tracts, grouped on the basis of their anatomical neighborhood. Wiring associated with particular brain structures share the same color. In diffusion imaging, the scanner detects movement of water inside neural fibers to reveal their locations.NeuroscienceNews.com image is credited to Anastasia Yendiki, Ph.D., Viviana Siless, Ph.D., MGH/Harvard, Boston Adolescent Neuroimaging of Depression and Anxiety (BANDA).
+          </p>
+          <p class="articleBody">
+            In parallel, researchers at Washington University and the University of Minnesota led a multi-institution consortium that comprehensively mapped long-distance brain connections and their variability in 1,200 healthy adults (twins and their non-twin siblings), using both MRI and magnetoencephalography. By pairing studies of structural and functional brain connectivity with extensive behavioral and heritability measures, the project has provided data about brain connectivity, its relationship to behavior, and contributions of environmental and genetic factors to individual differences in brain circuitry.
+          </p>
+          <p class="articleBody">
+            Technical advances achieved during the project have transformed the field – for example, enabling much more efficient data collection by dramatically shortening the duration of scans while maintaining high-resolution images. The wealth of data gathered has been shared with the wider neuroimaging community via a data archive (link is external) supported by NIH. These user-friendly tools for data mining, analysis, and visualization are enabling discoveries such as those on the predictive power of individual scan data, noted above.
+          </p>
+          <p class="articleBody">
+            The June 20 symposium will also feature reports on the second phase of the HCP, which will collect data from healthy subjects across the human lifespan and from individuals with specific clinical diagnoses.
+
+          </p>
+
+          <p class="articleSource">
+
+
+          </p>
+
+
+
+
+        </div>
+
+        <div class="contentColumnRight">
+            <div class="articleLink">
+                <a href="c31.html"><img class="C3" src="assets/img/Thumbs/C31.jpg" /> </a>
+            </div>
+            <div class="articleLink">
+                <a href="c32.html"><img class="C3" src="assets/img/Thumbs/C32.jpg" /></a>
+            </div>
+            <div class="articleLink">
+                <a href="c33.html"><img class="C3" src="assets/img/Thumbs/C33.jpg" /></a>
+            </div>
+            <div class="articleLink">
+              <a href="https://www.sciencenews.org/article/nanoparticles-beat-back-atherosclerosis">
+                <img class="C3" src="assets/img/Thumbs/C34.jpg" /></a>
+            </div>
+
+
+            </div>
+        </div>
+
+</body>
+
+</html>

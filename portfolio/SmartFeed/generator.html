@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>AJAX Generator</title>
+		<script type="text/javascript" src="assets/js/jquery.min.js"></script>
+
+        <script type="text/javascript">
+					$(document).ready(function() {
+						 $("#generate").click(function(){
+							 	$("#quote").load("theNew.php");
+						 });
+					});
+
+				</script>
+
+		<style type="text/css">
+		#wrapper {
+			width: 240px;
+			height: 80px;
+			margin: auto;
+			padding: 10px;
+			margin-top: 100px;
+			border: 1px dotted black;
+			text-align: center;
+		}
+		</style>
+
+
+	</head>
+
+	<body>
+
+		<div id="wrapper">
+
+		<input type="submit" id="generate" value="Generate!"><br />
+		<div><p id="quote"></p></div>
+		</div>
+	</body>
+</html>

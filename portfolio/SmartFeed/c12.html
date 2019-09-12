@@ -1,0 +1,228 @@
+<!DOCTYPE HTML>
+<meta charset="utf-8" />
+<html>
+
+<head>
+    <link rel="stylesheet" href="assets/css/mode.css">
+    <link rel="stylesheet" type="text/css" href="assets/js/slick-1.6.0/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="assets/js/slick-1.6.0/slick/slick-theme.css" />
+
+
+    <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/slick-1.6.0/slick/slick.min.js"></script>
+
+    <title>
+        SmartFeed
+    </title>
+</head>
+
+<body>
+    <script>
+        $(document).ready(function() {
+            $("#mySlider").slick({
+                infinite: true,
+                slidesToShow: 6,
+                slidesToScroll: 3,
+                autoplay: true,
+                autoplaySpeed: 2000
+            });
+            $("#more").hover(function() {
+                $("#moreText").show();
+
+            }, function() {
+                $("#moreText").hide()
+
+            });
+            $("#moreText").hover(function() {
+                $("#moreText").show();
+
+            }, function() {
+                $("#moreText").hide();
+
+            });
+
+        });
+    </script>
+
+<!--
+This is the main menu that people are supposed to use. the grey one.
+ -->
+
+    <div id="titleFrameLower">
+        <div id="blockLinks">
+            <div class="blockLink">
+                <a href="" class="blockLinkText">
+          News
+        </a>
+            </div>
+            <div class="blockLink">
+                <a href="" class="blockLinkText">
+          Videos
+        </a>
+            </div>
+            <div class="blockLink">
+                <a href="" class="blockLinkText">
+          Quizzes
+        </a>
+            </div>
+            <div class="blockLink">
+                <a href="" class="blockLinkText">
+          Food
+        </a>
+            </div>
+            <div class="blockLink">
+                <a href="" class="blockLinkText">
+          DIY
+        </a>
+            </div>
+            <div class="blockLink">
+                <span id="more" class="blockLinkText">
+          More
+        </span>
+                <div id="moreText">
+                </div>
+            </div>
+        </div>
+    </div>
+<!--
+MainFrame is the window that rests behind the menu, it contains all the stuff.
+-->
+
+    <div id="mainFrame">
+        <div id="titleFrameUpper">
+          <a href="main.html" id="title">
+              SmartFeed
+          </a>
+<!--
+These are the buttons on the far right WHICH DONT DO A FUCKING THING
+ -->
+            <div id="titleFrameLinks">
+                <div class="buttonLink">
+                    <img class="buttonLink" src="assets/img/Arrow.png" />
+                </div>
+                <div class="buttonLink">
+                    <img class="buttonLink" src="assets/img/wtf.png" />
+                </div>
+                <div class="buttonLink">
+                    <img class="buttonLink" src="assets/img/cute.png" />
+                </div>
+                <div class="buttonLink">
+                    <img class="buttonLink" src="assets/img/omg.png" />
+                </div>
+                <div class="buttonLink">
+                    <img class="buttonLink" src="assets/img/win.png" />
+                </div>
+                <div class="buttonLink">
+                    <img class="buttonLink" src="assets/img/LOL.png" />
+                </div>
+            </div>
+        </div>
+
+<!--
+This is the slider that should be at the top of every page.
+ -->
+
+ <div id="mySlider" class="theSlider">
+     <div class="sliderImage" id="s1">
+         <a href="c11.html"><img src="assets/img/Thumbs/C11.jpg" /></a>
+     </div>
+     <div class="sliderImage" id="s2">
+         <a href="c21.html"><img src="assets/img/Thumbs/C21.jpg" /></a>
+     </div>
+     <div class="sliderImage" id="s3">
+         <a href="http://neurosciencenews.com/consciousness-dimensions-neuroscience-4420/"><img src="assets/img/Thumbs/C23.jpg" /></a>
+     </div>
+     <div class="sliderImage" id="s4">
+         <a href="http://neurosciencenews.com/microbes-alzheimers-neurology-3826/"><img src="assets/img/Thumbs/C26.jpg" /></a>
+     </div>
+     <div class="sliderImage" id="s5">
+         <a href="http://phys.org/news/2016-06-scientists-supermassive-black-hole-cold.html"><img src="assets/img/Thumbs/C14.jpg" /></a>
+     </div>
+     <div class="sliderImage" id="s6">
+         <a href="http://phys.org/news/2016-06-mars-orbiters-reveal-seasonal-storm.html"><img src="assets/img/Thumbs/C13.jpg" /></a>
+     </div>
+     <div class="sliderImage" id="s7">
+         <a href="http://phys.org/news/2016-06-young-star-ripping-layers-close-orbiting.html"><img src="assets/img/Thumbs/C15.jpg" /></a>
+     </div>
+     <div class="sliderImage" id="s8">
+         <a href="http://phys.org/news/2016-06-alien-life-exoplanets-dies-young.html"><img src="assets/img/Thumbs/C16.jpg" /></a>
+     </div>
+
+<!--
+---------     --    --    -------     --------         ------    --------
+   --         --    --      --        --                 --      ---
+   --         --------      --        --------           --      --------
+   --         --    --      --              --           --            --
+   --         --    --    -------     --------         ------    --------
+
+
+   where the article goes.
+
+ -->
+
+        <div class="mainContent">
+          <p class="articleTitle">
+          </p>
+          <img class="articleImage" src="assets/img/Articles/C12.jpg" />
+          <p class="articleBody">
+            The Milky Way, the brilliant river of stars that has dominated the night sky and human imaginations since time immemorial, is but a faded memory to one third of humanity and 80 percent of Americans, according to a new global atlas of light pollution produced by Italian and American scientists.
+          </p>
+          <p class="articleBody">
+
+Light pollution is one of the most pervasive forms of environmental alteration. In most developed countries, the ubiquitous presence of artificial lights creates a luminous fog that swamps the stars and constellations of the night sky.
+</p>
+<p class="articleBody">
+"We've got whole generations of people in the United States who have never seen the Milky Way," said Chris Elvidge, a scientist with NOAA's National Centers for Environmental Information in Boulder, Colorado. "It's a big part of our connection to the cosmos—and it's been lost."
+</p>
+<p class="articleBody">
+Elvidge, along with Kimberly Baugh of the Cooperative Institute for Research in Environmental Sciences at the University of Colorado Boulder, is part of a team that just updated a global atlas of light pollution published today in the journal Science Advances. Using high-resolution satellite data and precision sky brightness measurements, their study produced the most accurate assessment yet of the global impact of light pollution.
+"I hope that this atlas will finally open the eyes of people to light pollution," said lead author Fabio Falchi from the Light Pollution Science and Technology Institute in Italy.
+The atlas takes advantage of low-light imaging now available from the NOAA/NASA Suomi National Polar-orbiting Partnership satellite, calibrated by thousands of ground observations.
+</p>
+<p class="articleBody">
+Light pollution is most extensive in countries like Singapore, Italy and South Korea, while Canada and Australia retain the most dark sky. In western Europe, only small areas of night sky remain relatively undiminished, mainly in Scotland, Sweden and Norway. Despite the vast open spaces of the American west, almost half of the U.S. experiences light-polluted nights.
+"In the U.S., some of our national parks are just about the last refuge of darkness - places like Yellowstone and the desert southwest," said co-author Dan Duriscoe of the National Park Service. "We're lucky to have a lot of public land that provides a buffer from large cities."
+</p>
+<p class="articleBody">
+  Light pollution does more than rob humans of the opportunity to ponder the night sky. Unnatural light can confuse or expose wildlife like insects, birds and sea turtles, with often fatal consequences.
+</p>
+<p class="articleBody">
+Fortunately, light pollution can be controlled by shielding lights to limit shine to the immediate area, reducing lighting to the minimum amount needed—or by simply turning them off.
+</p>
+
+Read more at: <a href="http://phys.org/news/2016-06-milky-hidden-one-third-humanity.html#jCp">Phys.Org</a>
+
+
+
+
+          <p class="articleSource">
+
+
+          </p>
+
+
+          </p>
+
+        </div>
+
+        <div class="contentColumnRight">
+            <div class="articleLink">
+                <img class="C3" src="assets/img/Thumbs/C31.jpg" />
+            </div>
+            <div class="articleLink">
+                <img class="C3" src="assets/img/Thumbs/C32.jpg" />
+            </div>
+            <div class="articleLink">
+                <img class="C3" src="assets/img/Thumbs/C33.jpg" />
+            </div>
+            <div class="articleLink">
+                <img class="C3" src="assets/img/Thumbs/C34.jpg" />
+            </div>
+
+
+            </div>
+        </div>
+
+</body>
+
+</html>

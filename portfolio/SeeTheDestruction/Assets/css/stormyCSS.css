@@ -1,0 +1,467 @@
+ * {
+     margin: 0;
+     padding: 0;
+ }
+ body {
+     /*background: url(images/bkg.png);*/
+     max-width: 1000px;
+     max-height: 600px;
+     background-color: #002222;
+     background-image: url("../img/stormy/bkgStormy.png");
+     overflow-y: hidden;
+
+ }
+ /*These are the static elements. */
+#lh{
+  position: absolute;
+  top: 390px;
+  left:2300px;
+  width: 280px;
+  z-index: +5;
+}
+
+.rain {
+  position: absolute;
+  top:0px;
+  left:0px;
+  z-index: +3;
+  display: block;
+  width: 3000px;
+  height:1000px;
+  background-image: url("../img/stormy/rain1.gif");
+  background-repeat: repeat;
+}
+
+.raining{
+  position: absolute;
+  top:0px;
+  left:0px;
+  z-index:+1;
+
+}
+
+.moonlink{
+  position: absolute;
+  top: 300px;
+  left: 300px;
+  z-index: +4;
+
+}
+
+#ready{
+  position:fixed;
+  top: 0px;
+  left: 0px;
+  z-index: +6;
+  background: #022;
+  background-image: url("Assets/img/ajax-loader.gif");
+}
+
+
+
+
+/* rain animation comes from http://bluebutterfly09.com/wp-content/uploads/2015/12/rain.gif
+ */
+
+ .water {
+     height: 0px;
+ }
+ .scene {
+   height: 0px;
+   width: 0px;
+   left: 1900px;
+   top: 0px;
+   display: inline-block;
+   position: relative;
+   z-index: -2;
+   animation: scene 5s infinite;
+   -moz-animation: scene 5s infinite;
+   -ms-animation: scene 5s infinite;
+   -webkit-animation: scene 5s infinite;
+ }
+ /*These are the Dynamic elements*/
+
+ .rocks {
+     width: auto;
+     height: auto;
+     margin: auto;
+     top: 400px;
+     z-index: 3;
+     display: inline-block;
+     position: absolute;
+ }
+ .water1 {
+     width: auto;
+     height: auto;
+     top: 0px;
+     left: 200px;
+     z-index: -1;
+     display: inline-block;
+     position: relative;
+     animation: water1 0.9s infinite;
+     -moz-animation: water1 0.9s infinite;
+     -ms-animation: water1 0.9s infinite;
+     -webkit-animation: water1 0.9s infinite;
+
+ }
+ .water2 {
+     width: auto;
+     height: auto;
+     left: 200px;
+     top: 180px;
+     z-index: 2;
+     display: inline-block;
+     position: relative;
+     animation: water2 2.2s infinite;
+     -moz-animation: water2 2.2s infinite;
+     -ms-animation: water2 2.2s infinite;
+     -webkit-animation: water2 2.2s infinite;
+
+ }
+ .water3 {
+     width: auto;
+     height: auto;
+     left: 200px;
+     top: 380px;
+     z-index: 2;
+     display: inline-block;
+     position: relative;
+ }
+
+ .clouds{
+   z-index: +8;
+ }
+ .cloud1 {
+     width: auto;
+     height: auto;
+     top: auto;
+     left: auto;
+     display: inline-block;
+     position: absolute;
+     z-index: 2;
+     animation: cloud ease-in-out 20s infinite;
+     -moz-animation: cloud ease-in-out 20s infinite;
+     -ms-animation: cloud ease-in-out 20s infinite;
+     -webkit-animation: cloud ease-in-out 20s infinite;
+
+ }
+ .cloud2 {
+    z-index: 3;
+     width: auto;
+     height: auto;
+     top: 0px;
+     left: auto;
+     display: inline-block;
+     position: absolute;
+     animation: cloud ease-in-out 25s infinite
+     -moz-animation: cloud ease-in-out 25s infinite
+     -ms-animation: cloud ease-in-out 25s infinite
+     -webkit-animation: cloud ease-in-out 25s infinite
+
+ }
+ /*These are the 'Scene' elements*/
+
+ .boat{
+   z-index: 0;
+   top: 620px;
+   position: relative;
+ }
+ .fire{
+   z-index: -10;
+   top: 270px;
+   left: 120px;
+   position: relative;
+   width: 120px;
+   height: 300px;
+
+ }
+ .fire2{
+   z-index: -30;
+   top: -60px;
+   left:20px;
+   position: relative;
+   width: 120px;
+   height: 300px;
+
+ }
+ /*These are the animations*/
+
+ @keyframes water1 {
+     0% {
+         top: 500px;
+         left: 200px;
+     }
+     10% {
+         top: 500px;
+         left: 205px;
+     }
+     20% {
+         top: 490px;
+         left: 210px;
+     }
+     30% {
+         top: 490px;
+         left: 215px;
+     }
+     40% {
+         top: 495px;
+         left: 220px;
+     }
+     50% {
+         top: 500px;
+         left: 215px;
+     }
+     60% {
+         top: 500px;
+         left: 210px;
+     }
+     70% {
+         top: 490px;
+         left: 205px;
+     }
+     80% {
+         top: 490px;
+         left: 200px;
+     }
+     90% {
+         top: 495px;
+         left: 195px;
+     }
+     100% {
+         top: 500px;
+         left: 200px;
+     }
+ }
+ @keyframes water2 {
+     0% {
+         top: 180px;
+         left: 200px;
+     }
+     10% {
+         top: 175px;
+         left: 195px;
+     }
+     20% {
+         top: 170px;
+         left: 200px;
+     }
+     30% {
+         top: 170px;
+         left: 205px;
+     }
+     40% {
+         top: 180px;
+         left: 210px;
+     }
+     50% {
+         top: 180px;
+         left: 215px;
+     }
+     60% {
+         top: 175px;
+         left: 220px;
+     }
+     70% {
+         top: 170px;
+         left: 215px;
+     }
+     80% {
+         top: 170px;
+         left: 210px;
+     }
+     90% {
+         top: 180px;
+         left: 205px;
+     }
+     100% {
+         top: 180px;
+         left: 200px;
+     }
+ }
+ @keyframes cloud {
+     0% {
+         top: auto;
+         left: 0px;
+     }
+     30% {
+         top: -10px;
+         left: -3px;
+     }
+     60% {
+         top: -10px;
+         left: 3px;
+     }
+     100% {
+         top: auto;
+         left: 0px;
+     }
+ }
+
+ @keyframes scene{
+   0%{
+     top:-150px;
+     left: 1900px;
+     transform:rotate(0deg);
+   }
+   16%{
+     top:-155px;
+     left:1902px;
+     transform:rotate(-0.1deg);
+   }
+   32%{
+     top:-155px;
+     left:1904px;
+     transform:rotate(-0.2deg);
+   }
+   48%{
+     top:-150px;
+     left:1906px;
+     transform:rotate(-0.3deg);
+   }
+   64%{
+     top:-150px;
+     left:1906px;
+     transform:rotate(0.1deg);
+   }
+   80%{
+     top:-155px;
+     left:1904px;
+     transform:rotate(0.2deg);
+   }
+   96%{
+     top:-155px;
+     left:1902px
+     transform:rotate(0.1deg);
+   }
+   100%{
+     top:-150px;
+     left:1900px
+     transform:rotate(0deg);
+   }
+ }
+ @-webkit-keyframes scene{
+   0%{
+     top:0px;
+     left: 1900px;
+     -webkit-transform:rotate(0deg);
+   }
+   16%{
+     top:-5px;
+     left:1902px;
+     -webkit-transform:rotate(-0.1deg);
+   }
+   32%{
+     top:-5px;
+     left:1904px;
+     -webkit-transform:rotate(-0.2deg);
+   }
+   48%{
+     top:0px;
+     left:1906px;
+     -webkit-transform:rotate(-0.3deg);
+   }
+   64%{
+     top:0px;
+     left:1906px;
+     -webkit-transform:rotate(0.1deg);
+   }
+   80%{
+     top:-5px;
+     left:1904px;
+     -webkit-transform:rotate(0.2deg);
+   }
+   96%{
+     top:-5px;
+     left:1902px;
+     -webkit-transform:rotate(0.1deg);
+   }
+   100%{
+     top:0px;
+     left:1900px;
+     -webkit-transform:rotate(0deg);
+   }
+ }
+ @-moz-keyframes scene{
+   0%{
+     top:0px;
+     left: 1900px;
+     -moz-transform:rotate(0deg);
+   }
+   16%{
+     top:-5px;
+     left:1902px;
+     -moz-transform:rotate(-0.1deg);
+   }
+   32%{
+     top:-5px;
+     left:1904px;
+     -moz-transform:rotate(-0.2deg);
+   }
+   48%{
+     top:0px;
+     left:1906px;
+     -moz-transform:rotate(-0.3deg);
+   }
+   64%{
+     top:0px;
+     left:1906px;
+     -moz-transform:rotate(0.1deg);
+   }
+   80%{
+     top:-5px;
+     left:1904px;
+     -moz-transform:rotate(0.2deg);
+   }
+   96%{
+     top:-5px;
+     left:1902px;
+     -moz-transform:rotate(0.1deg);
+   }
+   100%{
+     top:0px;
+     left:1900px;
+     -moz-transform:rotate(0deg);
+   }
+ }
+ @-ms-keyframes scene{
+   0%{
+     top:0px;
+     left: 1900px;
+     -ms-transform:rotate(0deg);
+   }
+   16%{
+     top:-5px;
+     left:1902px;
+     -ms-transform:rotate(-0.1deg);
+   }
+   32%{
+     top:-5px;
+     left:1904px;
+     -ms-transform:rotate(-0.2deg);
+   }
+   48%{
+     top:0px;
+     left:1906px;
+     -ms-transform:rotate(-0.3deg);
+   }
+   64%{
+     top:0px;
+     left:1906px;
+     -ms-transform:rotate(0.1deg);
+   }
+   80%{
+     top:-5px;
+     left:1904px;
+     -ms-transform:rotate(0.2deg);
+   }
+   96%{
+     top:-5px;
+     left:1902px;
+     -ms-transform:rotate(0.1deg);
+   }
+   100%{
+     top:0px;
+     left:1900px;
+     -ms-transform:rotate(0deg);
+   }
+ }

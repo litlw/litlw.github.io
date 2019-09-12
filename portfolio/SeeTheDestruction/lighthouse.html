@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <link rel="stylesheet" href="Assets/css/lighthouseCSS.css">
+    <title>See the Destruction</title>
+    <style>
+    html, body{
+      width: 100%;
+      height: 100%;
+    }
+    </style>
+</head>
+
+<body>
+    <a href="stormy.html">
+      <div id="clickbait">
+      </div>
+  </a>
+    <div id="room">
+      <img id = "computer" src="https://drive.google.com/uc?id=1eeGtuBTfGFfdWoaCvQPZigko1U0Uf5LN">
+      <a href="space.html">
+      <video id="vid" autoplay="autoplay" width="375px" height="283px" controls>
+        <source src="https://drive.google.com/uc?id=1FnBQPkA7oqY4cSzkhCP6Qpwx_-BZvGw3" type="video/mp4">
+      </video>
+    </a>
+      <img id="radio" src="https://drive.google.com/uc?id=18943Pb19Sxc6Z5-9aN1agH5cP32f3eJj">
+        <img src="https://drive.google.com/uc?id=1BzdB_QnTqjVwtSolqvBfhWyQi_8jA5fL">
+    </div>
+
+    <img id="desk" src="https://drive.google.com/uc?id=19hdgphrvzolVhqebU3fFKz6SMoBNE-KH">
+    <div id="rain">
+    </div>
+<!-- These are the pictures that make up the background scene.  -->
+    <img id="cloud1" src="https://drive.google.com/uc?id=1ETTdp9oFZAJDjW8PMqLEbzZBig90uyMd">
+    <img id="cloud2" src="https://drive.google.com/uc?id=1mlcSfPpSKRBL1uUyjfYuBq2CAosISQqb">
+    <img id="cloud3" src="https://drive.google.com/uc?id=1wzcXU0JpghJJVFlx9PxRiXBKOeSbwtnL">
+    <img id="cloud4" src="https://drive.google.com/uc?id=1odvw4-f_Jn-dZSrsNk4D2vt8FrMlD3lL">
+    <img id="cloud5" src="https://drive.google.com/uc?id=1gkEHXR9hlBGxCQYEmpasMF83K66E3wpn">
+
+
+    <img id="rocks" src="https://drive.google.com/uc?id=1nW8OQNMf_eI8MaohKQY1bTlZ5I4D1ufp">
+    <img id="water1" src="https://drive.google.com/uc?id=1sXkYvA7F0RbWfXQEvSw3p3fOewcv9EsM">
+    <img class="water" id="water2" src="https://drive.google.com/uc?id=1DwuZAV9bQu78bsGxYAMhWMKKToyfYj7D">
+    <img class="water" id="water3" src="https://drive.google.com/uc?id=1rHPS_714qZHHMG0VYrzJRw0znHFL-yL9">
+
+    <img class="water" id="water4" src="https://drive.google.com/uc?id=1VPakyJzoKEL27I9C5fo8vWee12nY78_h">
+    <a href="index.html">
+      <div id="scene">
+        <img id="boat" src="https://drive.google.com/uc?id=1_rMal4YCOcyTqQ5FnJ6e2yS3yaSlbASb">
+        <img id="flame1" src="https://drive.google.com/uc?id=1H5G43sE7DdBEnLaVpbey2D0Bm7-1VJPx">
+        <img id="flame2" src="https://drive.google.com/uc?id=1H5G43sE7DdBEnLaVpbey2D0Bm7-1VJPx">
+      </div>
+    </a>
+
+
+    <script language="javascript" type="text/javascript">
+
+      var audio = new Audio('https://drive.google.com/uc?id=1y3pFCjNdYBqFQ0ArjhU32SpQTEDiwKjk');
+      audio.addEventListener('ended', function() {
+          this.currentTime = 0;
+          this.play();
+      }, false);
+      var isPlaying = false;
+      window.addEventListener("click", ()=>{
+        if(!isPlaying){   audio.play(); isPlaying = !isPlaying; }
+      
+      })
+
+      </script>
+
+</body>
+
+</html>

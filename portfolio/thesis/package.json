@@ -1,0 +1,20 @@
+{
+  "name": "thesis_site",
+  "version": "1.0.0",
+  "description": "this is a hosting site for my thesis video",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/litlw/thesis_site.git"
+  },
+  "author": "Hugh Ritchie",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/litlw/thesis_site/issues"
+  },
+  "homepage": "https://github.com/litlw/thesis_site#readme",
+  "dependencies": {}
+}

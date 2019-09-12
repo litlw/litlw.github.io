@@ -1,0 +1,20 @@
+body{
+  background: #111;
+  // background-image: url('../../media/images/david-jorre-712468-unsplash.jpg');
+  background-size:cover;
+  background-attachment:scroll;
+  background-position: center;
+  color: white;
+  // min-height: 50000px;
+
+  div.container{
+    margin-top: 50px;
+    background: rgba(10, 10, 10, .60);
+    overflow-y: scroll;
+    height: 10vw;
+    div.container-fluid{
+      background: black;
+    }
+  }
+
+}
