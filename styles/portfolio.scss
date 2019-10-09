@@ -5,13 +5,54 @@ $space: 150px;
 
 
 body{
-    color: white;
-
+    height: 9900px;
+    background:  black;
+    scroll-behavior: smooth;
+    color: #fff;
+    font-family: 'Source Sans Pro';
+    .l{font-weight: 300;}
+    .m{font-weight: 400;}
+    .sb{font-weight: 600;}
+    .b{font-weight: 700;}
+    p {font-size: 14px;}
+    a {text-decoration:  none;}
     .noverflow{
         overflow: hidden;
     }
-    background: #232B33;
-    scroll-behavior: smooth;
+    div.row.frame{
+        overflow-y: hidden;
+        max-height: 500px;
+        transition: 0.005s;
+        .img{
+            height: 1200px;
+            background-size:  cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+    }
+
+    .parallax{
+        perspective: 1px;
+        height: 100vh;
+        overflow-x: hidden;
+        overflow-y: auto;
+        .parallax_layer{
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
+        .parallax_layer-base{
+            transform: translateZ(0);
+        }
+        .parallax_layer-back{
+            transform: translateZ(-10px) scale(2);
+        }
+    }
+
+
+    // background: #232B33;
     header{
         // background:  black;
         content{
@@ -22,7 +63,7 @@ body{
             #nav{
                 background: none !important;
                 transition: 1s;
-                opacity: 0;
+                opacity: 0.5;
                 height: 500px;
                 position: fixed !important;
                 z-index: 100;
@@ -32,47 +73,68 @@ body{
                 a{
                     text-decoration: none;
                 }
-                h1{
+                h4{
                    
-                    color: rgba(255, 255, 255, 0.3);
+                    color: rgba(0, 0, 0, 0.3);
                     padding-left: 20%;
                     transition: 1s;
                     &:hover{
-                        color: white;
-                        font-size: 4em;
-                        background: rgba(255, 255, 255, 0.3);
+                        color: black;
+                        font-size: 6vw;
+                        background: rgba(0, 0, 0, 0.5);
                     }
                     &:after{
                         content: " ";
                         border: white;
                     }
                 }
+                h3{
+                    color: rgba(255, 255, 255, 0.3);
+
+                }
             }
 
         }
     }
+ 
     main{
-        #p-1{background: #8FD8BD; color: #232B33;}
-        // #p-2{background: #8FD8BD; }
-        #p-3{background: #F3E36E; color: #232B33;}
-        // #p-4{background: rgb(119, 133, 128); }
-        #p-5{background: #8FD8BD; color: #232B33;}
-
-        content{
-            
+        div.row.frame{
+            overflow-y: hidden;
+            background: #232B33;
+            height: 300px;
         }
-    }
-    .text {
-        font-family: 'Source Sans Pro';
-    }
-    .l{font-weight: 300;}
-    .m{font-weight: 400;}
-    .sb{font-weight: 600;}
-    .b{font-weight: 700;}
-    p {
-        font-size: 14px;
+        .portfolio{
+            div{
+
+                *[class^='col-']{
+                    transition: 0.7s;
+                    
+                    &:hover{
+                        box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.3);
+                    }
+                    div{
+                        
+                    }
+                }
+            }
+        }
+        .viewer>div{
+            background: #F3E36E;
+        }
+        #p00, #p02, #p04{background: #3c2231; color:#fff }
+        #p-1>div.row{background: #3c2231; color: #fff;}
+        // #p-2{background: #8FD8BD; }
+        #p-3>div.row{background: #F3E36E; color: #232B33;}
+        // #p-4{background: rgb(119, 133, 128); }
+        #p-5>div.row{background: #8FD8BD; color: #232B33;}
+
+
     }
     
+    
+    .title{
+        font-size: 4vw;
+    }
     .spacer{
         min-height: $space;
     }

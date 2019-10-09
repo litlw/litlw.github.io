@@ -1,56 +1,8 @@
 body {
-  color: white;
-  background: #232B33;
+  height: 9900px;
+  background: black;
   scroll-behavior: smooth;
-}
-body .noverflow {
-  overflow: hidden;
-}
-body header content .navNotes {
-  border: 3px dashed rgba(255, 255, 255, 0.1);
-  color: rgba(255, 255, 255, 0.1);
-}
-body header content #nav {
-  background: none !important;
-  transition: 1s;
-  opacity: 0;
-  height: 500px;
-  position: fixed !important;
-  z-index: 100;
-}
-body header content #nav:hover {
-  opacity: 1;
-}
-body header content #nav a {
-  text-decoration: none;
-}
-body header content #nav h1 {
-  color: rgba(255, 255, 255, 0.3);
-  padding-left: 20%;
-  transition: 1s;
-}
-body header content #nav h1:hover {
-  color: white;
-  font-size: 4em;
-  background: rgba(255, 255, 255, 0.3);
-}
-body header content #nav h1:after {
-  content: " ";
-  border: white;
-}
-body main #p-1 {
-  background: #8FD8BD;
-  color: #232B33;
-}
-body main #p-3 {
-  background: #F3E36E;
-  color: #232B33;
-}
-body main #p-5 {
-  background: #8FD8BD;
-  color: #232B33;
-}
-body .text {
+  color: #fff;
   font-family: "Source Sans Pro";
 }
 body .l {
@@ -67,6 +19,110 @@ body .b {
 }
 body p {
   font-size: 14px;
+}
+body a {
+  text-decoration: none;
+}
+body .noverflow {
+  overflow: hidden;
+}
+body div.row.frame {
+  overflow-y: hidden;
+  max-height: 500px;
+  transition: 0.005s;
+}
+body div.row.frame .img {
+  height: 1200px;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+body .parallax {
+  perspective: 1px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+body .parallax .parallax_layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+body .parallax .parallax_layer-base {
+  transform: translateZ(0);
+}
+body .parallax .parallax_layer-back {
+  transform: translateZ(-10px) scale(2);
+}
+body header content .navNotes {
+  border: 3px dashed rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.1);
+}
+body header content #nav {
+  background: none !important;
+  transition: 1s;
+  opacity: 0.5;
+  height: 500px;
+  position: fixed !important;
+  z-index: 100;
+}
+body header content #nav:hover {
+  opacity: 1;
+}
+body header content #nav a {
+  text-decoration: none;
+}
+body header content #nav h4 {
+  color: rgba(0, 0, 0, 0.3);
+  padding-left: 20%;
+  transition: 1s;
+}
+body header content #nav h4:hover {
+  color: black;
+  font-size: 6vw;
+  background: rgba(0, 0, 0, 0.5);
+}
+body header content #nav h4:after {
+  content: " ";
+  border: white;
+}
+body header content #nav h3 {
+  color: rgba(255, 255, 255, 0.3);
+}
+body main div.row.frame {
+  overflow-y: hidden;
+  background: #232B33;
+  height: 300px;
+}
+body main .portfolio div *[class^=col-] {
+  transition: 0.7s;
+}
+body main .portfolio div *[class^=col-]:hover {
+  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.3);
+}
+body main .viewer > div {
+  background: #F3E36E;
+}
+body main #p00, body main #p02, body main #p04 {
+  background: #3c2231;
+  color: #fff;
+}
+body main #p-1 > div.row {
+  background: #3c2231;
+  color: #fff;
+}
+body main #p-3 > div.row {
+  background: #F3E36E;
+  color: #232B33;
+}
+body main #p-5 > div.row {
+  background: #8FD8BD;
+  color: #232B33;
+}
+body .title {
+  font-size: 4vw;
 }
 body .spacer {
   min-height: 150px;
