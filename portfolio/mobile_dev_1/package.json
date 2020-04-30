@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "bootstrap": "*",
-    "jquery": "^1.9.1",
+    "jquery": "^3.5.0",
     "jquery-mobile": "*",
     "p5": "*"
   },
